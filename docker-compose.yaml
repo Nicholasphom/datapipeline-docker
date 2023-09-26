@@ -60,7 +60,6 @@ x-airflow-common:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     PYTHONUNBUFFERED: 1
-    PYTHONPATH: /opt/airflow/dags/Python-Delta-Lake
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     # For backward compatibility, with Airflow <2.3
     AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -375,10 +374,6 @@ services:
     volumes:
        - ./apps:/opt/spark-apps
        - ./data:/opt/spark-data
-       - ./jars/delta-core_2.12-2.3.0.jar:/opt/spark/jars/delta-core_2.12-2.3.0.jar
-       - ./jars/ojdbc8.jar:/opt/spark/jars/ojdbc8.jar
-       - ./jars/oraclepki-19.11.0.0.jar:/opt/spark/jars/oraclepki-19.11.0.0.jar
-       - ./jars/oraclepki-19.11.0.0.jar:/opt/oracle/instantclient_19_19/oraclepki-19.11.0.0.jar
       # - /home/nicholas/dev:/home/nicholas/dev
     environment:
       - SPARK_LOCAL_IP=spark-master
@@ -406,7 +401,6 @@ services:
     volumes:
        - ./apps:/opt/spark-apps
        - ./data:/opt/spark-data
-       - ./jars/delta-core_2.12-2.3.0.jar:/opt/spark/jars/delta-core_2.12-2.3.0.jar
       # - /home/nicholas/dev:/home/nicholas/dev Local Mount
     networks:
         hadoop:
@@ -430,7 +424,6 @@ services:
   #   volumes:
   #       - ./apps:/opt/spark-apps
   #       - ./data:/opt/spark-data
-  #       - ./jars/delta-core_2.12-2.3.0.jar:/opt/spark/jars/delta-core_2.12-2.3.0.jar
   #       - /home/nicholas/dev:/home/nicholas/dev
   #   networks:
   #       hadoop:
