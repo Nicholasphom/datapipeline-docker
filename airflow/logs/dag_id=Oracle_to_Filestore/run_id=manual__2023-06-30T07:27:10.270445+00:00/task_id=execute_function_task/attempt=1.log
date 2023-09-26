@@ -1,0 +1,260 @@
+[2023-06-30T07:27:11.656+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-30T07:27:10.270445+00:00 [queued]>
+[2023-06-30T07:27:11.660+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-30T07:27:10.270445+00:00 [queued]>
+[2023-06-30T07:27:11.660+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-30T07:27:11.667+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-30 07:27:10.270445+00:00
+[2023-06-30T07:27:11.671+0000] {standard_task_runner.py:57} INFO - Started process 61 to run task
+[2023-06-30T07:27:11.673+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore', 'execute_function_task', 'manual__2023-06-30T07:27:10.270445+00:00', '--job-id', '671', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmp5je20r_2']
+[2023-06-30T07:27:11.674+0000] {standard_task_runner.py:85} INFO - Job 671: Subtask execute_function_task
+[2023-06-30T07:27:11.700+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-30T07:27:10.270445+00:00 [running]> on host 4e0859c08c65
+[2023-06-30T07:27:11.743+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-30T07:27:10.270445+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-30T07:27:10.270445+00:00'
+[2023-06-30T07:27:11.743+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-06-30T07:27:11.744+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-06-30T07:27:11.744+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-06-30T07:27:14.538+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-06-30T07:27:14.539+0000] {client.py:192} INFO - Instantiated <InsecureClient(url='http://namenode:50070')>.
+[2023-06-30T07:27:14.540+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T07:27:14.548+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T07:27:14.548+0000] {logging_mixin.py:149} INFO - HDFS Detected and Connected
+[2023-06-30T07:27:14.548+0000] {logging_mixin.py:149} INFO - Spark Connection check - session found
+[2023-06-30T07:27:15.231+0000] {logging_mixin.py:149} INFO - Attempt to read Msql Table by query: select * from DeltaLake.OracleTablesLog
+        where OracleRows < 1000000 AND OracleRows > 10000 AND OracleSizeInMB < 2500 AND CountyFilter IS NOT NULL and PrimaryKeyColumn !=''
+[2023-06-30T07:27:18.645+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T07:27:18.646+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T07:27:18.651+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T07:27:18.651+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T07:27:18.652+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T07:27:18.653+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T07:27:18.654+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T07:27:18.663+0000] {SparkOracle2FileStore.py:62} INFO - ['PR_LRS.FOSTER_FAM_AGNC', 'PR_LRS.EBT_EXPG_EXCPT', 'PR_LRS.ENCL_ESTIMATE', 'PR_LRS.UNIT', 'PR_LRS.IEVS_SAVE_EXCEPT', 'PR_LRS.WTW_24_MONTH_SIGN_DATE', 'PR_LRS.RULES_ADMIN', 'PR_LRS.COUNTY_PARAMTR_ADMIN_HST', 'PR_LRS.C4Y_PREG', 'PR_LRS.IEVS_PRISON_MATCH', 'PR_LRS.ORG_ACCT', 'PR_LRS.TRAIN_PGM', 'PR_LRS.IFD_SSI', 'PR_LRS.C4Y_PERS_NON_COMPL', 'PR_LRS.POS', 'PR_LRS.ADH_SUMM', 'PR_LRS.WDTIP_PGM_PARTICPTN', 'PR_LRS.HEAR_SUMM', 'PR_LRS.WDTIP_ALERT', 'PR_LRS.IHSS_REFRL', 'PR_LRS.SFIS_COUNTY_INFO', 'PR_LRS.STAFF', 'PR_LRS.MEDS_ALERT_CONFIG', 'PR_LRS.BATCH_JOB', 'PR_LRS.IHSS_CASE', 'PR_LRS.RULES_ADMIN_HST', 'PR_LRS.TAX_INTRCPT', 'PR_LRS.WTW_24_MONTH_SIGN_DATE_HST', 'PR_LRS.COUNTY_PARAMTR_ADMIN', 'PR_LRS.OCAT', 'PR_LRS.WDTIP_EXCEED_CLOCK', 'PR_LRS.AUTO_ACTN', 'PR_LRS.IFD_DUPL_DETL', 'PR_LRS.EBT_FRAUD_ACTIV', 'PR_LRS.GA_GR_TIME_LIMIT', 'PR_LRS.GRP_HOMES', 'PR_LRS.ASSET_VERIF', 'PR_LRS.FUND_CODE_MAP', 'PR_LRS.C4Y_OTHER_PGM_ASSIST', 'PR_LRS.IEVS_FF_MEDS', 'PR_LRS.COLLAB_CONTRACT', 'PR_LRS.WDTIP_APPRCH_CLOCK', 'PR_LRS.EXTRNL_STAFF_COUNTY_STAT', 'PR_LRS.VEND_IDENTIF', 'PR_LRS.OCAT_PERS', 'PR_LRS.MEDS_ALERT_CONFIG_HST', 'PR_LRS.WPR_SAMPLE_CASE', 'PR_LRS.PERS_TIME_TRACK_DETL']
+[2023-06-30T07:27:18.664+0000] {SparkOracle2FileStore.py:80} INFO - processing 1 out of 48
+[2023-06-30T07:27:18.664+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.FOSTER_FAM_AGNC
+[2023-06-30T07:27:18.664+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:27:20.281+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.FOSTER_FAM_AGNC
+[2023-06-30T07:27:20.281+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:27:22.247+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T07:27:22.790+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T07:27:22.790+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:27:23.921+0000] {SparkOracle2FileStore.py:103} INFO - 34262
+[2023-06-30T07:27:23.921+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:27:25.033+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/FOSTER_FAM_AGNC exists...
+[2023-06-30T07:27:25.033+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T07:27:25.038+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T07:27:25.038+0000] {client.py:320} INFO - Fetching status for '/dev/FOSTER_FAM_AGNC'.
+[2023-06-30T07:27:25.041+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T07:27:25.041+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T07:27:26.817+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T07:27:33.766+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table FOSTER_FAM_AGNC
+[2023-06-30T07:27:36.223+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table FOSTER_FAM_AGNC
+[2023-06-30T07:27:45.397+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table FOSTER_FAM_AGNC
+[2023-06-30T07:27:45.398+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.FOSTER_FAM_AGNC
+[2023-06-30T07:27:45.402+0000] {SparkOracle2FileStore.py:80} INFO - processing 2 out of 48
+[2023-06-30T07:27:45.402+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.EBT_EXPG_EXCPT
+[2023-06-30T07:27:45.402+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:27:46.501+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.EBT_EXPG_EXCPT
+[2023-06-30T07:27:46.501+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:27:47.578+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T07:27:48.099+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T07:27:48.099+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:27:49.357+0000] {SparkOracle2FileStore.py:103} INFO - 316506
+[2023-06-30T07:27:49.358+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:27:50.632+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/EBT_EXPG_EXCPT exists...
+[2023-06-30T07:27:50.632+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T07:27:50.637+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T07:27:50.637+0000] {client.py:320} INFO - Fetching status for '/dev/EBT_EXPG_EXCPT'.
+[2023-06-30T07:27:50.639+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T07:27:50.639+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T07:27:50.723+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T07:28:05.504+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table EBT_EXPG_EXCPT
+[2023-06-30T07:28:22.216+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table EBT_EXPG_EXCPT
+[2023-06-30T07:28:55.156+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table EBT_EXPG_EXCPT
+[2023-06-30T07:28:55.156+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.EBT_EXPG_EXCPT
+[2023-06-30T07:28:55.157+0000] {SparkOracle2FileStore.py:80} INFO - processing 3 out of 48
+[2023-06-30T07:28:55.157+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.ENCL_ESTIMATE
+[2023-06-30T07:28:55.157+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:28:56.215+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.ENCL_ESTIMATE
+[2023-06-30T07:28:56.215+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:28:57.280+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T07:28:57.827+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T07:28:57.827+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:28:58.888+0000] {SparkOracle2FileStore.py:103} INFO - 25979
+[2023-06-30T07:28:58.888+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:28:59.971+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/ENCL_ESTIMATE exists...
+[2023-06-30T07:28:59.971+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T07:28:59.976+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T07:28:59.976+0000] {client.py:320} INFO - Fetching status for '/dev/ENCL_ESTIMATE'.
+[2023-06-30T07:28:59.978+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T07:28:59.979+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T07:29:00.039+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T07:29:02.080+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table ENCL_ESTIMATE
+[2023-06-30T07:29:03.483+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table ENCL_ESTIMATE
+[2023-06-30T07:29:07.832+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table ENCL_ESTIMATE
+[2023-06-30T07:29:07.832+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.ENCL_ESTIMATE
+[2023-06-30T07:29:07.833+0000] {SparkOracle2FileStore.py:80} INFO - processing 4 out of 48
+[2023-06-30T07:29:07.833+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.UNIT
+[2023-06-30T07:29:07.833+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:29:08.885+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.UNIT
+[2023-06-30T07:29:08.886+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:29:09.976+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T07:29:10.488+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T07:29:10.488+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:29:11.582+0000] {SparkOracle2FileStore.py:103} INFO - 42879
+[2023-06-30T07:29:11.582+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:29:12.626+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/UNIT exists...
+[2023-06-30T07:29:12.626+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T07:29:12.630+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T07:29:12.630+0000] {client.py:320} INFO - Fetching status for '/dev/UNIT'.
+[2023-06-30T07:29:12.633+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T07:29:12.633+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T07:29:12.713+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T07:29:15.199+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table UNIT
+[2023-06-30T07:29:17.358+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table UNIT
+[2023-06-30T07:29:23.388+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table UNIT
+[2023-06-30T07:29:23.388+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.UNIT
+[2023-06-30T07:29:23.388+0000] {SparkOracle2FileStore.py:80} INFO - processing 5 out of 48
+[2023-06-30T07:29:23.388+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IEVS_SAVE_EXCEPT
+[2023-06-30T07:29:23.388+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:29:24.465+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IEVS_SAVE_EXCEPT
+[2023-06-30T07:29:24.465+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:29:25.568+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T07:29:26.094+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T07:29:26.095+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:29:27.411+0000] {SparkOracle2FileStore.py:103} INFO - 397776
+[2023-06-30T07:29:27.411+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:29:28.618+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/IEVS_SAVE_EXCEPT exists...
+[2023-06-30T07:29:28.618+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T07:29:28.622+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T07:29:28.623+0000] {client.py:320} INFO - Fetching status for '/dev/IEVS_SAVE_EXCEPT'.
+[2023-06-30T07:29:28.625+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T07:29:28.625+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T07:29:28.684+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T07:29:50.720+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table IEVS_SAVE_EXCEPT
+[2023-06-30T07:30:13.287+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table IEVS_SAVE_EXCEPT
+[2023-06-30T07:31:05.951+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table IEVS_SAVE_EXCEPT
+[2023-06-30T07:31:05.952+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.IEVS_SAVE_EXCEPT
+[2023-06-30T07:31:05.952+0000] {SparkOracle2FileStore.py:80} INFO - processing 6 out of 48
+[2023-06-30T07:31:05.952+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WTW_24_MONTH_SIGN_DATE
+[2023-06-30T07:31:05.952+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:31:06.986+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WTW_24_MONTH_SIGN_DATE
+[2023-06-30T07:31:06.986+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:31:08.026+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T07:31:08.563+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T07:31:08.563+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:31:09.837+0000] {SparkOracle2FileStore.py:103} INFO - 830945
+[2023-06-30T07:31:09.837+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:31:11.150+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/WTW_24_MONTH_SIGN_DATE exists...
+[2023-06-30T07:31:11.150+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T07:31:11.155+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T07:31:11.155+0000] {client.py:320} INFO - Fetching status for '/dev/WTW_24_MONTH_SIGN_DATE'.
+[2023-06-30T07:31:11.157+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T07:31:11.157+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T07:31:11.212+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T07:31:18.643+0000] {local_task_job_runner.py:291} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2023-06-30T07:31:18.644+0000] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 61. PIDs of all processes in the group: [62, 61]
+[2023-06-30T07:31:18.645+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 61
+[2023-06-30T07:31:18.645+0000] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-06-30T07:31:18.645+0000] {clientserver.py:538} INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1519, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-06-30T07:31:18.646+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:18.646+0000] {java_gateway.py:1055} ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1519, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2023-06-30T07:31:18.647+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:18.647+0000] {SparkOracle2FileStore.py:176} INFO - Error Processing Table PR_LRS.WTW_24_MONTH_SIGN_DATE:An error occurred while calling o451.isEmpty
+[2023-06-30T07:31:18.648+0000] {SparkOracle2FileStore.py:80} INFO - processing 6 out of 48
+[2023-06-30T07:31:18.648+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.RULES_ADMIN
+[2023-06-30T07:31:18.648+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:31:19.115+0000] {clientserver.py:538} INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+[2023-06-30T07:31:19.116+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.116+0000] {java_gateway.py:1055} ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2023-06-30T07:31:19.116+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.116+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: An error occurred while calling o461.load
+[2023-06-30T07:31:19.116+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-06-30T07:31:19.116+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.RULES_ADMIN
+[2023-06-30T07:31:19.116+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T07:31:19.116+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.116+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-06-30T07:31:19.116+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.116+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-06-30T07:31:19.117+0000] {SparkOracle2FileStore.py:90} INFO - could not reliablily get upper and lower bounds of table PR_LRS.RULES_ADMIN, reading without partition 
+[2023-06-30T07:31:19.117+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T07:31:19.117+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.117+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-06-30T07:31:19.117+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.117+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T07:31:19.117+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:31:19.117+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.117+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-06-30T07:31:19.117+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.117+0000] {SparkOracle2FileStore.py:103} INFO - None
+[2023-06-30T07:31:19.117+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T07:31:19.117+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.117+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-06-30T07:31:19.117+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.117+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/RULES_ADMIN exists...
+[2023-06-30T07:31:19.117+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T07:31:19.122+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T07:31:19.123+0000] {client.py:320} INFO - Fetching status for '/dev/RULES_ADMIN'.
+[2023-06-30T07:31:19.126+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T07:31:19.127+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T07:31:19.127+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.127+0000] {logging_mixin.py:149} INFO - Error in reading dataframe:[Errno 111] Connection refused
+[2023-06-30T07:31:19.127+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-06-30T07:31:19.127+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-06-30T07:31:19.127+0000] {SparkOracle2FileStore.py:119} INFO - Table write error, skipping table
+[2023-06-30T07:31:19.127+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-30T07:31:19.134+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=Oracle_to_Filestore, task_id=execute_function_task, execution_date=20230630T072710, start_date=20230630T072711, end_date=20230630T073119
+[2023-06-30T07:31:19.179+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=62, status='terminated', started='07:27:11') (62) terminated with exit code None
+[2023-06-30T07:31:19.179+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=61, status='terminated', exitcode=0, started='07:27:11') (61) terminated with exit code 0

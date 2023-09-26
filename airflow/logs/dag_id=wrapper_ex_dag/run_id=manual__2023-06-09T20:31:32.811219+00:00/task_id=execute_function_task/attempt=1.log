@@ -1,0 +1,74 @@
+[2023-06-09T20:31:33.335+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-09T20:31:32.811219+00:00 [queued]>
+[2023-06-09T20:31:33.339+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-09T20:31:32.811219+00:00 [queued]>
+[2023-06-09T20:31:33.339+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-09T20:31:33.346+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-09 20:31:32.811219+00:00
+[2023-06-09T20:31:33.350+0000] {standard_task_runner.py:57} INFO - Started process 2801 to run task
+[2023-06-09T20:31:33.352+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'wrapper_ex_dag', 'execute_function_task', 'manual__2023-06-09T20:31:32.811219+00:00', '--job-id', '253', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/custom_dags/WrapperDag.py', '--cfg-path', '/tmp/tmpsz9c2m3u']
+[2023-06-09T20:31:33.354+0000] {standard_task_runner.py:85} INFO - Job 253: Subtask execute_function_task
+[2023-06-09T20:31:33.378+0000] {task_command.py:410} INFO - Running <TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-09T20:31:32.811219+00:00 [running]> on host c712b1d8680f
+[2023-06-09T20:31:33.419+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wrapper_ex_dag' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-09T20:31:32.811219+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-09T20:31:32.811219+00:00'
+[2023-06-09T20:31:33.419+0000] {CsvDagWrapper.py:22} INFO - CSV Delta Class Initialted
+[2023-06-09T20:31:33.419+0000] {logging_mixin.py:149} INFO - Environment successfully parsed! Environment is Local
+[2023-06-09T20:31:33.419+0000] {CsvDagWrapper.py:39} INFO - Environment successfully parsed! Environment is Local
+[2023-06-09T20:31:33.419+0000] {logging_mixin.py:149} INFO - Table/s successfully parsed! Table:  ['CASE', 'CASE_PERS', 'PGM']
+[2023-06-09T20:31:33.419+0000] {CsvDagWrapper.py:44} INFO - Table/s successfully parsed! Table:  ['CASE', 'CASE_PERS', 'PGM']
+[2023-06-09T20:31:33.419+0000] {logging_mixin.py:149} INFO - Number of tables to be processed = 3
+[2023-06-09T20:31:33.419+0000] {logging_mixin.py:149} INFO - TABLE_NAME IN ('CASE', 'CASE_PERS', 'PGM')
+[2023-06-09T20:31:33.420+0000] {CsvDagWrapper.py:60} INFO - Works so far....
+[2023-06-09T20:31:35.232+0000] {CsvDagWrapper.py:63} INFO - test
+[2023-06-09T20:31:35.276+0000] {logging_mixin.py:149} INFO - This program loads CSV files into Local Delta Store!
+[2023-06-09T20:31:35.286+0000] {warnings.py:109} WARNING - /opt/***/dags/Python-Delta-Lake/Csv2Delta/CsvDagWrapper.py:96: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(read_log_query,sql_connection_1)
+
+[2023-06-09T20:31:35.289+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/sql.py", line 2018, in execute
+    cur.execute(*args, **kwargs)
+pyodbc.Error: ('HY000', '[HY000] [Microsoft][ODBC Driver 18 for SQL Server]Connection is busy with results for another command (0) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Python-Delta-Lake/custom_dags/WrapperDag.py", line 46, in execute_function_task
+    task.RunCsvToDelta("Local",["CASE","CASE_PERS","PGM"],False)
+  File "/opt/airflow/dags/Python-Delta-Lake/Csv2Delta/CsvDagWrapper.py", line 96, in RunCsvToDelta
+    df = pd.read_sql(read_log_query,sql_connection_1)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/sql.py", line 564, in read_sql
+    return pandas_sql.read_query(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/sql.py", line 2078, in read_query
+    cursor = self.execute(*args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/sql.py", line 2030, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT OWNER,
+       TABLE_NAME,
+       DeltaTableName,
+       DeltaTableCreatedLocal As DeltaTableCreated,
+       OracleRows,
+       CsvRows,
+       PrimaryKeyColumn,
+       RowsOnDeltaLocal As RowsOnDelta,
+       DeltaNoteLocal AS DeltaNote
+        FROM DAU.DeltaLake.OracleTablesLog
+        WHERE TABLE_NAME IN ('CASE', 'CASE_PERS', 'PGM') ORDER BY CsvRows
+        ': ('HY000', '[HY000] [Microsoft][ODBC Driver 18 for SQL Server]Connection is busy with results for another command (0) (SQLExecDirectW)')
+[2023-06-09T20:31:35.296+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=wrapper_ex_dag, task_id=execute_function_task, execution_date=20230609T203132, start_date=20230609T203133, end_date=20230609T203135
+[2023-06-09T20:31:35.304+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 253 for task execute_function_task (Execution failed on sql 'SELECT OWNER,
+       TABLE_NAME,
+       DeltaTableName,
+       DeltaTableCreatedLocal As DeltaTableCreated,
+       OracleRows,
+       CsvRows,
+       PrimaryKeyColumn,
+       RowsOnDeltaLocal As RowsOnDelta,
+       DeltaNoteLocal AS DeltaNote
+        FROM DAU.DeltaLake.OracleTablesLog
+        WHERE TABLE_NAME IN ('CASE', 'CASE_PERS', 'PGM') ORDER BY CsvRows
+        ': ('HY000', '[HY000] [Microsoft][ODBC Driver 18 for SQL Server]Connection is busy with results for another command (0) (SQLExecDirectW)'); 2801)
+[2023-06-09T20:31:35.328+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-09T20:31:35.338+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

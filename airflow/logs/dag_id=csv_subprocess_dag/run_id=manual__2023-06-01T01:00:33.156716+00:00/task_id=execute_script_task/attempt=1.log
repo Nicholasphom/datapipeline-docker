@@ -1,0 +1,30 @@
+[2023-06-01T01:00:34.178+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_subprocess_dag.execute_script_task manual__2023-06-01T01:00:33.156716+00:00 [queued]>
+[2023-06-01T01:00:34.182+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_subprocess_dag.execute_script_task manual__2023-06-01T01:00:33.156716+00:00 [queued]>
+[2023-06-01T01:00:34.183+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-01T01:00:34.189+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_script_task> on 2023-06-01 01:00:33.156716+00:00
+[2023-06-01T01:00:34.192+0000] {standard_task_runner.py:57} INFO - Started process 53 to run task
+[2023-06-01T01:00:34.194+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'csv_subprocess_dag', 'execute_script_task', 'manual__2023-06-01T01:00:33.156716+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/Csv2Delta/dags/Csv2Delta_dag.py', '--cfg-path', '/tmp/tmpn8tups1n']
+[2023-06-01T01:00:34.195+0000] {standard_task_runner.py:85} INFO - Job 61: Subtask execute_script_task
+[2023-06-01T01:00:34.218+0000] {task_command.py:410} INFO - Running <TaskInstance: csv_subprocess_dag.execute_script_task manual__2023-06-01T01:00:33.156716+00:00 [running]> on host 699164ff75ed
+[2023-06-01T01:00:34.256+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_subprocess_dag' AIRFLOW_CTX_TASK_ID='execute_script_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-01T01:00:33.156716+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-01T01:00:33.156716+00:00'
+[2023-06-01T01:00:34.305+0000] {logging_mixin.py:149} INFO - python3: can't open file '/opt/***/dags/Csv2DeltaCsv2DeltaMainCommon.py': [Errno 2] No such file or directory
+[2023-06-01T01:00:34.306+0000] {Csv2Delta_dag.py:55} INFO - 
+[2023-06-01T01:00:34.310+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Csv2Delta/dags/Csv2Delta_dag.py", line 58, in execute_script_task
+    sub_task = PythonOperator(task_id = "Example",
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 168, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2023-06-01T01:00:34.312+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=csv_subprocess_dag, task_id=execute_script_task, execution_date=20230601T010033, start_date=20230601T010034, end_date=20230601T010034
+[2023-06-01T01:00:34.319+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 61 for task execute_script_task (`python_callable` param must be callable; 53)
+[2023-06-01T01:00:34.326+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-01T01:00:34.334+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

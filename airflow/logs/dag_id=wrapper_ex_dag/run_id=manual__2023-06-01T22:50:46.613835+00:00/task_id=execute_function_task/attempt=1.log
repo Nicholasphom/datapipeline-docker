@@ -1,0 +1,25 @@
+[2023-06-01T22:50:47.364+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-01T22:50:46.613835+00:00 [queued]>
+[2023-06-01T22:50:47.369+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-01T22:50:46.613835+00:00 [queued]>
+[2023-06-01T22:50:47.369+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-01T22:50:47.376+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-01 22:50:46.613835+00:00
+[2023-06-01T22:50:47.379+0000] {standard_task_runner.py:57} INFO - Started process 54 to run task
+[2023-06-01T22:50:47.381+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'wrapper_ex_dag', 'execute_function_task', 'manual__2023-06-01T22:50:46.613835+00:00', '--job-id', '173', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/custom_dags/WrapperDag.py', '--cfg-path', '/tmp/tmpj8yug5tx']
+[2023-06-01T22:50:47.383+0000] {standard_task_runner.py:85} INFO - Job 173: Subtask execute_function_task
+[2023-06-01T22:50:47.406+0000] {task_command.py:410} INFO - Running <TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-01T22:50:46.613835+00:00 [running]> on host 129355970c2d
+[2023-06-01T22:50:47.446+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wrapper_ex_dag' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-01T22:50:46.613835+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-01T22:50:46.613835+00:00'
+[2023-06-01T22:50:47.447+0000] {logging_mixin.py:149} INFO - CSV Delta Class Initialted
+[2023-06-01T22:50:47.447+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Python-Delta-Lake/custom_dags/WrapperDag.py", line 44, in execute_function_task
+    task.RunCsvToDelta("Local","CASE")
+TypeError: CsvDeltaClass.RunCsvToDelta() missing 1 required positional argument: 'to_delete'
+[2023-06-01T22:50:47.451+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=wrapper_ex_dag, task_id=execute_function_task, execution_date=20230601T225046, start_date=20230601T225047, end_date=20230601T225047
+[2023-06-01T22:50:47.458+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 173 for task execute_function_task (CsvDeltaClass.RunCsvToDelta() missing 1 required positional argument: 'to_delete'; 54)
+[2023-06-01T22:50:47.473+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-01T22:50:47.481+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

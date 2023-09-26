@@ -1,0 +1,32 @@
+[2023-09-12T23:07:53.722+0000] {processor.py:157} INFO - Started process (PID=26) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-09-12T23:07:53.725+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-09-12T23:07:53.727+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.726+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-09-12T23:07:53.744+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.741+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py", line 15, in <module>
+    import OracleTest.OracleDbTest
+  File "/opt/airflow/dags/Python-Delta-Lake/OracleTest/OracleDbTest.py", line 1, in <module>
+    import cx_Oracle
+ModuleNotFoundError: No module named 'cx_Oracle'
+[2023-09-12T23:07:53.745+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-09-12T23:07:53.761+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.042 seconds
+[2023-09-12T23:08:24.267+0000] {processor.py:157} INFO - Started process (PID=40) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-09-12T23:08:24.269+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-09-12T23:08:24.270+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:08:24.270+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-09-12T23:08:24.283+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:08:24.281+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py", line 15, in <module>
+    import OracleTest.OracleDbTest
+  File "/opt/airflow/dags/Python-Delta-Lake/OracleTest/OracleDbTest.py", line 1, in <module>
+    import cx_Oracle
+ModuleNotFoundError: No module named 'cx_Oracle'
+[2023-09-12T23:08:24.284+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-09-12T23:08:24.296+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.032 seconds

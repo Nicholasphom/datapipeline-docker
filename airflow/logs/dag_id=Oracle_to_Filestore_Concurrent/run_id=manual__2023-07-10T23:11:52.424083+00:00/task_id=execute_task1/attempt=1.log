@@ -1,0 +1,25 @@
+[2023-07-10T23:11:59.452+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.execute_task1 manual__2023-07-10T23:11:52.424083+00:00 [queued]>
+[2023-07-10T23:11:59.457+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.execute_task1 manual__2023-07-10T23:11:52.424083+00:00 [queued]>
+[2023-07-10T23:11:59.457+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-10T23:11:59.464+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_task1> on 2023-07-10 23:11:52.424083+00:00
+[2023-07-10T23:11:59.467+0000] {standard_task_runner.py:57} INFO - Started process 317 to run task
+[2023-07-10T23:11:59.467+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-10T23:11:59.470+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore_Concurrent', 'execute_task1', 'manual__2023-07-10T23:11:52.424083+00:00', '--job-id', '962', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmpec3jlu_x']
+[2023-07-10T23:11:59.471+0000] {standard_task_runner.py:85} INFO - Job 962: Subtask execute_task1
+[2023-07-10T23:11:59.496+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore_Concurrent.execute_task1 manual__2023-07-10T23:11:52.424083+00:00 [running]> on host 876817aabcc6
+[2023-07-10T23:11:59.538+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore_Concurrent' AIRFLOW_CTX_TASK_ID='execute_task1' AIRFLOW_CTX_EXECUTION_DATE='2023-07-10T23:11:52.424083+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-10T23:11:52.424083+00:00'
+[2023-07-10T23:11:59.539+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py", line 67, in execute_task1
+    task = SparkOracle2FileStore.OracleFilestorePipeline(table_list = top_list,num_executor_core= 7, executor_memory= "9G",spark_app_name= "task1")
+TypeError: OracleFilestorePipeline.__init__() got an unexpected keyword argument 'table_list'
+[2023-07-10T23:11:59.544+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=Oracle_to_Filestore_Concurrent, task_id=execute_task1, execution_date=20230710T231152, start_date=20230710T231159, end_date=20230710T231159
+[2023-07-10T23:11:59.565+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 962 for task execute_task1 (OracleFilestorePipeline.__init__() got an unexpected keyword argument 'table_list'; 317)
+[2023-07-10T23:11:59.601+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-10T23:11:59.610+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

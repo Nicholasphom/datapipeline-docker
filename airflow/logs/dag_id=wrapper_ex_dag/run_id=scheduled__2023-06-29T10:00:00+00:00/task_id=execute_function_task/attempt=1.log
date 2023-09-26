@@ -1,0 +1,19 @@
+[2023-06-29T11:00:00.963+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task scheduled__2023-06-29T10:00:00+00:00 [queued]>
+[2023-06-29T11:00:00.974+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task scheduled__2023-06-29T10:00:00+00:00 [queued]>
+[2023-06-29T11:00:00.974+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-29T11:00:00.993+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-29 10:00:00+00:00
+[2023-06-29T11:00:00.996+0000] {standard_task_runner.py:57} INFO - Started process 11147 to run task
+[2023-06-29T11:00:00.998+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'wrapper_ex_dag', 'execute_function_task', 'scheduled__2023-06-29T10:00:00+00:00', '--job-id', '544', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/Oracle2CsvDag.py', '--cfg-path', '/tmp/tmpmqukud98']
+[2023-06-29T11:00:00.999+0000] {standard_task_runner.py:85} INFO - Job 544: Subtask execute_function_task
+[2023-06-29T11:00:01.032+0000] {task_command.py:410} INFO - Running <TaskInstance: wrapper_ex_dag.execute_function_task scheduled__2023-06-29T10:00:00+00:00 [running]> on host 68331b7f6fd1
+[2023-06-29T11:00:01.077+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wrapper_ex_dag' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-29T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-29T10:00:00+00:00'
+[2023-06-29T11:00:01.079+0000] {logging_mixin.py:149} WARNING - usage: *** [-h] -u U -p P -t T [-f F] [-r R] [-k K]
+[2023-06-29T11:00:01.079+0000] {logging_mixin.py:149} WARNING - ***: error: the following arguments are required: -u, -p, -t
+[2023-06-29T11:00:01.079+0000] {logging_mixin.py:149} INFO - 2
+[2023-06-29T11:00:01.079+0000] {logging_mixin.py:149} INFO - Oracle username, password and table names are mandatory paramter. You can supply them like -u YOUR_USER_NAME -p YOUR_PASSWORD  -t TableName1 TableName2 TableName3
+[2023-06-29T11:00:01.079+0000] {logging_mixin.py:149} INFO - Other optional parameters are: 
+[2023-06-29T11:00:01.079+0000] {logging_mixin.py:149} INFO - Force Download all rows if the table is in Top 142 list and does not have any data for Sac County
+[2023-06-29T11:00:01.079+0000] {logging_mixin.py:149} INFO - Update Oracle Row Counts: e.g. -r True
+[2023-06-29T11:00:01.079+0000] {logging_mixin.py:149} INFO - Update min/max values of Oracle Primary Keys: e.g. -k True
+[2023-06-29T11:00:01.129+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-29T11:00:01.137+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

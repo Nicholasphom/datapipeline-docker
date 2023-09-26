@@ -1,0 +1,28 @@
+[2023-06-09T18:24:03.527+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-09T18:24:03.004350+00:00 [queued]>
+[2023-06-09T18:24:03.531+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-09T18:24:03.004350+00:00 [queued]>
+[2023-06-09T18:24:03.531+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-09T18:24:03.538+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-09 18:24:03.004350+00:00
+[2023-06-09T18:24:03.541+0000] {standard_task_runner.py:57} INFO - Started process 723 to run task
+[2023-06-09T18:24:03.543+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'wrapper_ex_dag', 'execute_function_task', 'manual__2023-06-09T18:24:03.004350+00:00', '--job-id', '251', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/custom_dags/WrapperDag.py', '--cfg-path', '/tmp/tmplv5d533c']
+[2023-06-09T18:24:03.545+0000] {standard_task_runner.py:85} INFO - Job 251: Subtask execute_function_task
+[2023-06-09T18:24:03.568+0000] {task_command.py:410} INFO - Running <TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-09T18:24:03.004350+00:00 [running]> on host c712b1d8680f
+[2023-06-09T18:24:03.606+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wrapper_ex_dag' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-09T18:24:03.004350+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-09T18:24:03.004350+00:00'
+[2023-06-09T18:24:03.608+0000] {CsvDagWrapper.py:22} INFO - CSV Delta Class Initialted
+[2023-06-09T18:24:03.608+0000] {logging_mixin.py:149} INFO - Environment successfully parsed! Environment is Local
+[2023-06-09T18:24:03.608+0000] {CsvDagWrapper.py:39} INFO - Environment successfully parsed! Environment is Local
+[2023-06-09T18:24:03.608+0000] {logging_mixin.py:149} INFO - Table/s successfully parsed! Table:  ['CASE', 'CASE_PERS', 'PGM']
+[2023-06-09T18:24:03.608+0000] {CsvDagWrapper.py:44} INFO - Table/s successfully parsed! Table:  ['CASE', 'CASE_PERS', 'PGM']
+[2023-06-09T18:24:03.608+0000] {logging_mixin.py:149} INFO - Number of tables to be processed = 3
+[2023-06-09T18:24:03.608+0000] {logging_mixin.py:149} INFO - TABLE_NAME IN ('CASE', 'CASE_PERS', 'PGM')
+[2023-06-09T18:24:03.608+0000] {CsvDagWrapper.py:60} INFO - Works so far....
+[2023-06-09T18:24:05.539+0000] {CsvDagWrapper.py:63} INFO - test
+[2023-06-09T18:24:05.576+0000] {logging_mixin.py:149} INFO - This program loads CSV files into Local Delta Store!
+[2023-06-09T18:24:05.582+0000] {warnings.py:109} WARNING - /opt/***/dags/Python-Delta-Lake/Csv2Delta/CsvDagWrapper.py:96: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(read_log_query,sql_connection_1)
+
+[2023-06-09T18:24:05.593+0000] {logging_mixin.py:149} INFO - (3, 9)
+[2023-06-09T18:24:05.593+0000] {logging_mixin.py:149} INFO - Task Ran successfully so far....
+[2023-06-09T18:24:05.595+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-09T18:24:05.601+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=wrapper_ex_dag, task_id=execute_function_task, execution_date=20230609T182403, start_date=20230609T182403, end_date=20230609T182405
+[2023-06-09T18:24:05.640+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-09T18:24:05.648+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

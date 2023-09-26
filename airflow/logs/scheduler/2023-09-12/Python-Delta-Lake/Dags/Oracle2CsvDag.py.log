@@ -1,0 +1,24 @@
+[2023-09-12T23:07:53.495+0000] {processor.py:157} INFO - Started process (PID=23) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py
+[2023-09-12T23:07:53.496+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py for tasks to queue
+[2023-09-12T23:07:53.497+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.497+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py
+[2023-09-12T23:07:53.549+0000] {processor.py:836} INFO - DAG(s) dict_keys(['Oracle2CSV_Subprocess', 'wrapper_ex_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py
+[2023-09-12T23:07:53.734+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.734+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:Oracle2CSV_Subprocess
+[2023-09-12T23:07:53.746+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.746+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:Oracle2CSV_Subprocess
+[2023-09-12T23:07:53.753+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.753+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:Oracle2CSV_Subprocess
+[2023-09-12T23:07:53.769+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.769+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:wrapper_ex_dag
+[2023-09-12T23:07:53.775+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.774+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:wrapper_ex_dag
+[2023-09-12T23:07:53.780+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.780+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:wrapper_ex_dag
+[2023-09-12T23:07:53.781+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.781+0000] {dag.py:2726} INFO - Sync 2 DAGs
+[2023-09-12T23:07:53.790+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.790+0000] {dag.py:2747} INFO - Creating ORM DAG for wrapper_ex_dag
+[2023-09-12T23:07:53.791+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.791+0000] {dag.py:2747} INFO - Creating ORM DAG for Oracle2CSV_Subprocess
+[2023-09-12T23:07:53.797+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.797+0000] {dag.py:3486} INFO - Setting next_dagrun for Oracle2CSV_Subprocess to None, run_after=None
+[2023-09-12T23:07:53.800+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.800+0000] {dag.py:3486} INFO - Setting next_dagrun for wrapper_ex_dag to 2023-09-12T22:00:00+00:00, run_after=2023-09-12T23:00:00+00:00
+[2023-09-12T23:07:53.818+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py took 0.329 seconds
+[2023-09-12T23:08:24.150+0000] {processor.py:157} INFO - Started process (PID=37) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py
+[2023-09-12T23:08:24.152+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py for tasks to queue
+[2023-09-12T23:08:24.154+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:08:24.154+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py
+[2023-09-12T23:08:24.180+0000] {processor.py:836} INFO - DAG(s) dict_keys(['wrapper_ex_dag', 'Oracle2CSV_Subprocess']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py
+[2023-09-12T23:08:24.207+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:08:24.207+0000] {dag.py:2726} INFO - Sync 2 DAGs
+[2023-09-12T23:08:24.224+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:08:24.224+0000] {dag.py:3486} INFO - Setting next_dagrun for Oracle2CSV_Subprocess to None, run_after=None
+[2023-09-12T23:08:24.228+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:08:24.228+0000] {dag.py:3486} INFO - Setting next_dagrun for wrapper_ex_dag to 2023-09-12T22:00:00+00:00, run_after=2023-09-12T23:00:00+00:00
+[2023-09-12T23:08:24.241+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/Oracle2CsvDag.py took 0.095 seconds

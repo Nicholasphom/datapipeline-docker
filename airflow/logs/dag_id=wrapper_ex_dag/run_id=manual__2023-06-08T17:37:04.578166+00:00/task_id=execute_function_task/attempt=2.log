@@ -1,0 +1,45 @@
+[2023-06-08T17:42:06.221+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-08T17:37:04.578166+00:00 [queued]>
+[2023-06-08T17:42:06.225+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-08T17:37:04.578166+00:00 [queued]>
+[2023-06-08T17:42:06.225+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2023-06-08T17:42:06.231+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-08 17:37:04.578166+00:00
+[2023-06-08T17:42:06.235+0000] {standard_task_runner.py:57} INFO - Started process 170 to run task
+[2023-06-08T17:42:06.237+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'wrapper_ex_dag', 'execute_function_task', 'manual__2023-06-08T17:37:04.578166+00:00', '--job-id', '214', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/custom_dags/WrapperDag.py', '--cfg-path', '/tmp/tmptnehi6fc']
+[2023-06-08T17:42:06.238+0000] {standard_task_runner.py:85} INFO - Job 214: Subtask execute_function_task
+[2023-06-08T17:42:06.260+0000] {task_command.py:410} INFO - Running <TaskInstance: wrapper_ex_dag.execute_function_task manual__2023-06-08T17:37:04.578166+00:00 [running]> on host a41d26454903
+[2023-06-08T17:42:06.296+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wrapper_ex_dag' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-08T17:37:04.578166+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-08T17:37:04.578166+00:00'
+[2023-06-08T17:42:06.297+0000] {logging_mixin.py:149} INFO - CSV Delta Class Initialted
+[2023-06-08T17:42:06.297+0000] {CsvDagWrapper.py:23} INFO - CSV Delta Class Initialted
+[2023-06-08T17:42:06.297+0000] {logging_mixin.py:149} INFO - Environment successfully parsed! Environment is Local
+[2023-06-08T17:42:06.297+0000] {CsvDagWrapper.py:29} INFO - Environment successfully parsed! Environment is Local
+[2023-06-08T17:42:06.297+0000] {logging_mixin.py:149} INFO - Table/s successfully parsed! Table:  CASE
+[2023-06-08T17:42:06.297+0000] {CsvDagWrapper.py:34} INFO - Table/s successfully parsed! Table:  CASE
+[2023-06-08T17:42:06.297+0000] {CsvDagWrapper.py:36} INFO - Works so far....
+[2023-06-08T17:42:06.409+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Python-Delta-Lake/custom_dags/WrapperDag.py", line 46, in execute_function_task
+    task.RunCsvToDelta("Local","CASE",False)
+  File "/opt/airflow/dags/Python-Delta-Lake/Csv2Delta/CsvDagWrapper.py", line 37, in RunCsvToDelta
+    spark = SparkApp.GetApp(f"Csv To Delta Main {environment_location_suffix}")
+  File "/opt/airflow/dags/Python-Delta-Lake/Csv2Delta/SparkApp.py", line 10, in GetApp
+    .master("local[*]").getOrCreate()
+  File "/home/airflow/.local/lib/python3.10/site-packages/pyspark/sql/session.py", line 269, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pyspark/context.py", line 483, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.10/site-packages/pyspark/context.py", line 195, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pyspark/context.py", line 417, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pyspark/java_gateway.py", line 106, in launch_gateway
+    raise RuntimeError("Java gateway process exited before sending its port number")
+RuntimeError: Java gateway process exited before sending its port number
+[2023-06-08T17:42:06.414+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=wrapper_ex_dag, task_id=execute_function_task, execution_date=20230608T173704, start_date=20230608T174206, end_date=20230608T174206
+[2023-06-08T17:42:06.423+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 214 for task execute_function_task (Java gateway process exited before sending its port number; 170)
+[2023-06-08T17:42:06.448+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-08T17:42:06.457+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

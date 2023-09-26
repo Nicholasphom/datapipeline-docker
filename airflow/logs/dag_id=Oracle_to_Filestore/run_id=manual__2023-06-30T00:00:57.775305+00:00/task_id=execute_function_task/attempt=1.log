@@ -1,0 +1,884 @@
+[2023-06-30T00:00:58.361+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-30T00:00:57.775305+00:00 [queued]>
+[2023-06-30T00:00:58.366+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-30T00:00:57.775305+00:00 [queued]>
+[2023-06-30T00:00:58.366+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-30T00:00:58.373+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-30 00:00:57.775305+00:00
+[2023-06-30T00:00:58.377+0000] {standard_task_runner.py:57} INFO - Started process 61 to run task
+[2023-06-30T00:00:58.379+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore', 'execute_function_task', 'manual__2023-06-30T00:00:57.775305+00:00', '--job-id', '652', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmp2opyqshl']
+[2023-06-30T00:00:58.381+0000] {standard_task_runner.py:85} INFO - Job 652: Subtask execute_function_task
+[2023-06-30T00:00:58.409+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-30T00:00:57.775305+00:00 [running]> on host 7cad62d201c7
+[2023-06-30T00:00:58.458+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-30T00:00:57.775305+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-30T00:00:57.775305+00:00'
+[2023-06-30T00:00:58.459+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-06-30T00:00:58.459+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-06-30T00:00:58.459+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-06-30T00:01:00.762+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-06-30T00:01:00.762+0000] {client.py:192} INFO - Instantiated <InsecureClient(url='http://namenode:50070')>.
+[2023-06-30T00:01:00.763+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:01:01.683+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:01:01.683+0000] {logging_mixin.py:149} INFO - HDFS Detected and Connected
+[2023-06-30T00:01:01.683+0000] {logging_mixin.py:149} INFO - Spark Connection check - session found
+[2023-06-30T00:01:02.187+0000] {logging_mixin.py:149} INFO - Attempt to read Msql Table by query: select * from DeltaLake.OracleTablesLog
+        where OracleRows < 1000000 AND OracleRows > 10000 AND OracleSizeInMB < 2500 AND CountyFilter IS NOT NULL and PrimaryKeyColumn !=''
+[2023-06-30T00:01:05.455+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T00:01:05.456+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T00:01:05.460+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T00:01:05.461+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T00:01:05.461+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T00:01:05.463+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T00:01:05.464+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-06-30T00:01:05.472+0000] {SparkOracle2FileStore.py:62} INFO - ['PR_LRS.FOSTER_FAM_AGNC', 'PR_LRS.EBT_EXPG_EXCPT', 'PR_LRS.ENCL_ESTIMATE', 'PR_LRS.UNIT', 'PR_LRS.IEVS_SAVE_EXCEPT', 'PR_LRS.WTW_24_MONTH_SIGN_DATE', 'PR_LRS.RULES_ADMIN', 'PR_LRS.COUNTY_PARAMTR_ADMIN_HST', 'PR_LRS.C4Y_PREG', 'PR_LRS.IEVS_PRISON_MATCH', 'PR_LRS.ORG_ACCT', 'PR_LRS.TRAIN_PGM', 'PR_LRS.IFD_SSI', 'PR_LRS.C4Y_PERS_NON_COMPL', 'PR_LRS.POS', 'PR_LRS.ADH_SUMM', 'PR_LRS.WDTIP_PGM_PARTICPTN', 'PR_LRS.HEAR_SUMM', 'PR_LRS.WDTIP_ALERT', 'PR_LRS.IHSS_REFRL', 'PR_LRS.SFIS_COUNTY_INFO', 'PR_LRS.STAFF', 'PR_LRS.MEDS_ALERT_CONFIG', 'PR_LRS.BATCH_JOB', 'PR_LRS.IHSS_CASE', 'PR_LRS.RULES_ADMIN_HST', 'PR_LRS.TAX_INTRCPT', 'PR_LRS.WTW_24_MONTH_SIGN_DATE_HST', 'PR_LRS.COUNTY_PARAMTR_ADMIN', 'PR_LRS.OCAT', 'PR_LRS.WDTIP_EXCEED_CLOCK', 'PR_LRS.AUTO_ACTN', 'PR_LRS.IFD_DUPL_DETL', 'PR_LRS.EBT_FRAUD_ACTIV', 'PR_LRS.GA_GR_TIME_LIMIT', 'PR_LRS.GRP_HOMES', 'PR_LRS.ASSET_VERIF', 'PR_LRS.FUND_CODE_MAP', 'PR_LRS.C4Y_OTHER_PGM_ASSIST', 'PR_LRS.IEVS_FF_MEDS', 'PR_LRS.COLLAB_CONTRACT', 'PR_LRS.WDTIP_APPRCH_CLOCK', 'PR_LRS.EXTRNL_STAFF_COUNTY_STAT', 'PR_LRS.VEND_IDENTIF', 'PR_LRS.OCAT_PERS', 'PR_LRS.MEDS_ALERT_CONFIG_HST', 'PR_LRS.WPR_SAMPLE_CASE', 'PR_LRS.PERS_TIME_TRACK_DETL']
+[2023-06-30T00:01:05.474+0000] {SparkOracle2FileStore.py:80} INFO - processing 1 out of 48
+[2023-06-30T00:01:05.474+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.FOSTER_FAM_AGNC
+[2023-06-30T00:01:05.474+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:01:08.246+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.FOSTER_FAM_AGNC
+[2023-06-30T00:01:08.247+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:01:09.650+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:01:10.203+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:01:10.203+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:01:11.343+0000] {SparkOracle2FileStore.py:103} INFO - 34262
+[2023-06-30T00:01:11.343+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:01:12.494+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/FOSTER_FAM_AGNC exists...
+[2023-06-30T00:01:12.494+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:01:12.505+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:01:12.505+0000] {client.py:320} INFO - Fetching status for '/dev/FOSTER_FAM_AGNC'.
+[2023-06-30T00:01:12.509+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:01:12.509+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:01:14.308+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:01:22.018+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table FOSTER_FAM_AGNC
+[2023-06-30T00:01:24.788+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table FOSTER_FAM_AGNC
+[2023-06-30T00:01:34.927+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table FOSTER_FAM_AGNC
+[2023-06-30T00:01:34.927+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.FOSTER_FAM_AGNC
+[2023-06-30T00:01:34.927+0000] {SparkOracle2FileStore.py:80} INFO - processing 2 out of 48
+[2023-06-30T00:01:34.927+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.EBT_EXPG_EXCPT
+[2023-06-30T00:01:34.927+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:01:36.034+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.EBT_EXPG_EXCPT
+[2023-06-30T00:01:36.035+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:01:37.084+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:01:37.615+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:01:37.615+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:01:38.924+0000] {SparkOracle2FileStore.py:103} INFO - 316506
+[2023-06-30T00:01:38.924+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:01:40.160+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/EBT_EXPG_EXCPT exists...
+[2023-06-30T00:01:40.160+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:01:40.169+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:01:40.169+0000] {client.py:320} INFO - Fetching status for '/dev/EBT_EXPG_EXCPT'.
+[2023-06-30T00:01:40.173+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:01:40.173+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:01:40.285+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:01:57.552+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table EBT_EXPG_EXCPT
+[2023-06-30T00:02:18.985+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table EBT_EXPG_EXCPT
+[2023-06-30T00:03:00.597+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table EBT_EXPG_EXCPT
+[2023-06-30T00:03:00.613+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.EBT_EXPG_EXCPT
+[2023-06-30T00:03:00.614+0000] {SparkOracle2FileStore.py:80} INFO - processing 3 out of 48
+[2023-06-30T00:03:00.614+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.ENCL_ESTIMATE
+[2023-06-30T00:03:00.614+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:03:01.706+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.ENCL_ESTIMATE
+[2023-06-30T00:03:01.706+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:03:02.848+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:03:03.404+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:03:03.404+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:03:04.429+0000] {SparkOracle2FileStore.py:103} INFO - 25979
+[2023-06-30T00:03:04.429+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:03:05.603+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/ENCL_ESTIMATE exists...
+[2023-06-30T00:03:05.603+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:03:05.613+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:03:05.613+0000] {client.py:320} INFO - Fetching status for '/dev/ENCL_ESTIMATE'.
+[2023-06-30T00:03:05.618+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:03:05.619+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:03:05.714+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:03:07.847+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table ENCL_ESTIMATE
+[2023-06-30T00:03:09.381+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table ENCL_ESTIMATE
+[2023-06-30T00:03:14.863+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table ENCL_ESTIMATE
+[2023-06-30T00:03:14.864+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.ENCL_ESTIMATE
+[2023-06-30T00:03:14.864+0000] {SparkOracle2FileStore.py:80} INFO - processing 4 out of 48
+[2023-06-30T00:03:14.864+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.UNIT
+[2023-06-30T00:03:14.864+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:03:15.925+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.UNIT
+[2023-06-30T00:03:15.926+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:03:16.977+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:03:17.498+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:03:17.499+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:03:18.584+0000] {SparkOracle2FileStore.py:103} INFO - 42879
+[2023-06-30T00:03:18.584+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:03:19.656+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/UNIT exists...
+[2023-06-30T00:03:19.656+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:03:19.667+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:03:19.667+0000] {client.py:320} INFO - Fetching status for '/dev/UNIT'.
+[2023-06-30T00:03:19.672+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:03:19.672+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:03:19.751+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:03:22.548+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table UNIT
+[2023-06-30T00:03:24.968+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table UNIT
+[2023-06-30T00:03:33.075+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table UNIT
+[2023-06-30T00:03:33.075+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.UNIT
+[2023-06-30T00:03:33.076+0000] {SparkOracle2FileStore.py:80} INFO - processing 5 out of 48
+[2023-06-30T00:03:33.076+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IEVS_SAVE_EXCEPT
+[2023-06-30T00:03:33.076+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:03:34.148+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IEVS_SAVE_EXCEPT
+[2023-06-30T00:03:34.148+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:03:35.267+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:03:35.821+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:03:35.821+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:03:37.075+0000] {SparkOracle2FileStore.py:103} INFO - 397776
+[2023-06-30T00:03:37.075+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:03:38.324+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/IEVS_SAVE_EXCEPT exists...
+[2023-06-30T00:03:38.324+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:03:38.333+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:03:38.333+0000] {client.py:320} INFO - Fetching status for '/dev/IEVS_SAVE_EXCEPT'.
+[2023-06-30T00:03:38.336+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:03:38.337+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:03:38.419+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:04:04.271+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table IEVS_SAVE_EXCEPT
+[2023-06-30T00:04:34.574+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table IEVS_SAVE_EXCEPT
+[2023-06-30T00:05:34.815+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table IEVS_SAVE_EXCEPT
+[2023-06-30T00:05:34.815+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.IEVS_SAVE_EXCEPT
+[2023-06-30T00:05:34.815+0000] {SparkOracle2FileStore.py:80} INFO - processing 6 out of 48
+[2023-06-30T00:05:34.815+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WTW_24_MONTH_SIGN_DATE
+[2023-06-30T00:05:34.816+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:05:35.889+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WTW_24_MONTH_SIGN_DATE
+[2023-06-30T00:05:35.889+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:05:36.951+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:05:37.516+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:05:37.517+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:05:38.796+0000] {SparkOracle2FileStore.py:103} INFO - 830945
+[2023-06-30T00:05:38.797+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:05:40.073+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/WTW_24_MONTH_SIGN_DATE exists...
+[2023-06-30T00:05:40.073+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:05:40.080+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:05:40.080+0000] {client.py:320} INFO - Fetching status for '/dev/WTW_24_MONTH_SIGN_DATE'.
+[2023-06-30T00:05:40.083+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:05:40.083+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:05:40.141+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:06:15.561+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table WTW_24_MONTH_SIGN_DATE
+[2023-06-30T00:06:50.372+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table WTW_24_MONTH_SIGN_DATE
+[2023-06-30T00:08:03.862+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table WTW_24_MONTH_SIGN_DATE
+[2023-06-30T00:08:03.862+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.WTW_24_MONTH_SIGN_DATE
+[2023-06-30T00:08:03.862+0000] {SparkOracle2FileStore.py:80} INFO - processing 7 out of 48
+[2023-06-30T00:08:03.862+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.RULES_ADMIN
+[2023-06-30T00:08:03.862+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:08:04.916+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.RULES_ADMIN
+[2023-06-30T00:08:04.916+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:08:06.253+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:08:06.788+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:08:06.788+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:08:07.982+0000] {SparkOracle2FileStore.py:103} INFO - 25885
+[2023-06-30T00:08:07.982+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:08:09.072+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/RULES_ADMIN exists...
+[2023-06-30T00:08:09.072+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:08:09.080+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:08:09.080+0000] {client.py:320} INFO - Fetching status for '/dev/RULES_ADMIN'.
+[2023-06-30T00:08:09.083+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:08:09.083+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:08:09.163+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:08:11.494+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table RULES_ADMIN
+[2023-06-30T00:08:13.125+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table RULES_ADMIN
+[2023-06-30T00:08:19.087+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table RULES_ADMIN
+[2023-06-30T00:08:19.087+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.RULES_ADMIN
+[2023-06-30T00:08:19.087+0000] {SparkOracle2FileStore.py:80} INFO - processing 8 out of 48
+[2023-06-30T00:08:19.087+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column HST_ID on table PR_LRS.COUNTY_PARAMTR_ADMIN_HST
+[2023-06-30T00:08:19.087+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:08:20.159+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column HST_ID on table PR_LRS.COUNTY_PARAMTR_ADMIN_HST
+[2023-06-30T00:08:20.159+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:08:21.224+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:08:21.739+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:08:21.739+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:08:22.856+0000] {SparkOracle2FileStore.py:103} INFO - 48818
+[2023-06-30T00:08:22.856+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:08:23.955+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/COUNTY_PARAMTR_ADMIN_HST exists...
+[2023-06-30T00:08:23.955+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:08:23.962+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:08:23.962+0000] {client.py:320} INFO - Fetching status for '/dev/COUNTY_PARAMTR_ADMIN_HST'.
+[2023-06-30T00:08:23.965+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:08:23.965+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:08:24.035+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:08:27.395+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table COUNTY_PARAMTR_ADMIN_HST
+[2023-06-30T00:08:29.949+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table COUNTY_PARAMTR_ADMIN_HST
+[2023-06-30T00:08:37.608+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table COUNTY_PARAMTR_ADMIN_HST
+[2023-06-30T00:08:37.609+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.COUNTY_PARAMTR_ADMIN_HST
+[2023-06-30T00:08:37.609+0000] {SparkOracle2FileStore.py:80} INFO - processing 9 out of 48
+[2023-06-30T00:08:37.609+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.C4Y_PREG
+[2023-06-30T00:08:37.609+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:08:38.722+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.C4Y_PREG
+[2023-06-30T00:08:38.722+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:08:39.799+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:08:40.370+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:08:40.370+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:08:41.754+0000] {SparkOracle2FileStore.py:103} INFO - 87659
+[2023-06-30T00:08:41.754+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:08:42.913+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/C4Y_PREG exists...
+[2023-06-30T00:08:42.913+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:08:42.919+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:08:42.920+0000] {client.py:320} INFO - Fetching status for '/dev/C4Y_PREG'.
+[2023-06-30T00:08:42.923+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:08:42.923+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:08:42.991+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:08:47.424+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table C4Y_PREG
+[2023-06-30T00:08:51.161+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table C4Y_PREG
+[2023-06-30T00:09:00.542+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table C4Y_PREG
+[2023-06-30T00:09:00.542+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.C4Y_PREG
+[2023-06-30T00:09:00.542+0000] {SparkOracle2FileStore.py:80} INFO - processing 10 out of 48
+[2023-06-30T00:09:00.542+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IEVS_PRISON_MATCH
+[2023-06-30T00:09:00.543+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:09:01.629+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IEVS_PRISON_MATCH
+[2023-06-30T00:09:01.629+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:09:02.694+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:09:03.223+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:09:03.223+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:09:06.327+0000] {SparkOracle2FileStore.py:103} INFO - 432367
+[2023-06-30T00:09:06.327+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:09:07.726+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/IEVS_PRISON_MATCH exists...
+[2023-06-30T00:09:07.726+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:09:07.733+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:09:07.733+0000] {client.py:320} INFO - Fetching status for '/dev/IEVS_PRISON_MATCH'.
+[2023-06-30T00:09:07.737+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:09:07.737+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:09:07.815+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:09:38.900+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table IEVS_PRISON_MATCH
+[2023-06-30T00:10:11.294+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table IEVS_PRISON_MATCH
+[2023-06-30T00:11:21.531+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table IEVS_PRISON_MATCH
+[2023-06-30T00:11:21.532+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.IEVS_PRISON_MATCH
+[2023-06-30T00:11:21.532+0000] {SparkOracle2FileStore.py:80} INFO - processing 11 out of 48
+[2023-06-30T00:11:21.532+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.ORG_ACCT
+[2023-06-30T00:11:21.532+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:11:22.669+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.ORG_ACCT
+[2023-06-30T00:11:22.669+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:11:23.769+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:11:24.317+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:11:24.317+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:11:25.436+0000] {SparkOracle2FileStore.py:103} INFO - 30003
+[2023-06-30T00:11:25.436+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:11:26.533+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/ORG_ACCT exists...
+[2023-06-30T00:11:26.533+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:11:26.539+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:11:26.539+0000] {client.py:320} INFO - Fetching status for '/dev/ORG_ACCT'.
+[2023-06-30T00:11:26.543+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:11:26.543+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:11:26.606+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:11:29.735+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table ORG_ACCT
+[2023-06-30T00:11:32.914+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table ORG_ACCT
+[2023-06-30T00:11:41.463+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table ORG_ACCT
+[2023-06-30T00:11:41.463+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.ORG_ACCT
+[2023-06-30T00:11:41.463+0000] {SparkOracle2FileStore.py:80} INFO - processing 12 out of 48
+[2023-06-30T00:11:41.463+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.TRAIN_PGM
+[2023-06-30T00:11:41.463+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:11:42.662+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.TRAIN_PGM
+[2023-06-30T00:11:42.662+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:11:43.893+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:11:44.421+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:11:44.421+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:11:45.694+0000] {SparkOracle2FileStore.py:103} INFO - 18600
+[2023-06-30T00:11:45.695+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:11:46.890+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/TRAIN_PGM exists...
+[2023-06-30T00:11:46.890+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:11:46.895+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:11:46.896+0000] {client.py:320} INFO - Fetching status for '/dev/TRAIN_PGM'.
+[2023-06-30T00:11:46.899+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:11:46.899+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:11:46.971+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:11:49.131+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table TRAIN_PGM
+[2023-06-30T00:11:50.564+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table TRAIN_PGM
+[2023-06-30T00:11:55.898+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table TRAIN_PGM
+[2023-06-30T00:11:55.899+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.TRAIN_PGM
+[2023-06-30T00:11:55.899+0000] {SparkOracle2FileStore.py:80} INFO - processing 13 out of 48
+[2023-06-30T00:11:55.899+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IFD_SSI
+[2023-06-30T00:11:55.899+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:11:57.192+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IFD_SSI
+[2023-06-30T00:11:57.192+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:11:58.583+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:11:59.354+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:11:59.355+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:12:01.288+0000] {SparkOracle2FileStore.py:103} INFO - 775890
+[2023-06-30T00:12:01.288+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:12:02.722+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/IFD_SSI exists...
+[2023-06-30T00:12:02.722+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:12:02.728+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:12:02.728+0000] {client.py:320} INFO - Fetching status for '/dev/IFD_SSI'.
+[2023-06-30T00:12:02.731+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:12:02.731+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:12:02.804+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:12:48.874+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table IFD_SSI
+[2023-06-30T00:13:31.276+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table IFD_SSI
+[2023-06-30T00:15:19.390+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table IFD_SSI
+[2023-06-30T00:15:19.390+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.IFD_SSI
+[2023-06-30T00:15:19.390+0000] {SparkOracle2FileStore.py:80} INFO - processing 14 out of 48
+[2023-06-30T00:15:19.390+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.C4Y_PERS_NON_COMPL
+[2023-06-30T00:15:19.390+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:15:20.474+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.C4Y_PERS_NON_COMPL
+[2023-06-30T00:15:20.474+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:15:21.523+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:15:22.055+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:15:22.055+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:15:24.613+0000] {SparkOracle2FileStore.py:103} INFO - 2477286
+[2023-06-30T00:15:24.613+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:15:26.243+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/C4Y_PERS_NON_COMPL exists...
+[2023-06-30T00:15:26.243+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:15:26.252+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:15:26.253+0000] {client.py:320} INFO - Fetching status for '/dev/C4Y_PERS_NON_COMPL'.
+[2023-06-30T00:15:26.256+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:15:26.256+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:15:26.308+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:16:52.996+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table C4Y_PERS_NON_COMPL
+[2023-06-30T00:18:16.928+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table C4Y_PERS_NON_COMPL
+[2023-06-30T00:21:26.755+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table C4Y_PERS_NON_COMPL
+[2023-06-30T00:21:26.755+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.C4Y_PERS_NON_COMPL
+[2023-06-30T00:21:26.756+0000] {SparkOracle2FileStore.py:80} INFO - processing 15 out of 48
+[2023-06-30T00:21:26.756+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.POS
+[2023-06-30T00:21:26.756+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:21:27.816+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.POS
+[2023-06-30T00:21:27.816+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:21:28.849+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:21:29.374+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:21:29.374+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:21:30.500+0000] {SparkOracle2FileStore.py:103} INFO - 346615
+[2023-06-30T00:21:30.500+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:21:31.694+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/POS exists...
+[2023-06-30T00:21:31.694+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:21:31.702+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:21:31.702+0000] {client.py:320} INFO - Fetching status for '/dev/POS'.
+[2023-06-30T00:21:31.707+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:21:31.707+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:21:31.762+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:21:43.228+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table POS
+[2023-06-30T00:21:54.073+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table POS
+[2023-06-30T00:22:23.082+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table POS
+[2023-06-30T00:22:23.083+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.POS
+[2023-06-30T00:22:23.083+0000] {SparkOracle2FileStore.py:80} INFO - processing 16 out of 48
+[2023-06-30T00:22:23.083+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.ADH_SUMM
+[2023-06-30T00:22:23.083+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:22:24.193+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.ADH_SUMM
+[2023-06-30T00:22:24.193+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:22:25.240+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:22:25.733+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:22:25.733+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:22:26.861+0000] {SparkOracle2FileStore.py:103} INFO - 16589
+[2023-06-30T00:22:26.862+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:22:27.978+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/ADH_SUMM exists...
+[2023-06-30T00:22:27.978+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:22:27.986+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:22:27.986+0000] {client.py:320} INFO - Fetching status for '/dev/ADH_SUMM'.
+[2023-06-30T00:22:27.990+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:22:27.990+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:22:28.044+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:22:30.586+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table ADH_SUMM
+[2023-06-30T00:22:32.127+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table ADH_SUMM
+[2023-06-30T00:22:37.537+0000] {SparkOracle2FileStore.py:157} INFO - no rows to delete on table ADH_SUMM
+[2023-06-30T00:22:37.538+0000] {SparkOracle2FileStore.py:165} INFO - Table Processing complete for PR_LRS.ADH_SUMM
+[2023-06-30T00:22:37.538+0000] {SparkOracle2FileStore.py:80} INFO - processing 17 out of 48
+[2023-06-30T00:22:37.538+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WDTIP_PGM_PARTICPTN
+[2023-06-30T00:22:37.538+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:22:38.685+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WDTIP_PGM_PARTICPTN
+[2023-06-30T00:22:38.685+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-06-30T00:22:39.774+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-06-30T00:22:40.293+0000] {SparkOracle2FileStore.py:100} INFO - Filter Processor Disabled
+[2023-06-30T00:22:40.293+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:22:42.012+0000] {SparkOracle2FileStore.py:103} INFO - 227042
+[2023-06-30T00:22:42.012+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-06-30T00:22:43.206+0000] {logging_mixin.py:149} INFO - Checking if HDFS Directory /dev/WDTIP_PGM_PARTICPTN exists...
+[2023-06-30T00:22:43.206+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-30T00:22:43.221+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-30T00:22:43.221+0000] {client.py:320} INFO - Fetching status for '/dev/WDTIP_PGM_PARTICPTN'.
+[2023-06-30T00:22:43.225+0000] {logging_mixin.py:149} INFO - HDFS Path Exists
+[2023-06-30T00:22:43.225+0000] {SparkOracle2FileStore.py:113} INFO - Should go in here if table dir exists
+[2023-06-30T00:22:43.278+0000] {SparkOracle2FileStore.py:126} INFO - read dir table should not fail and go in here...
+[2023-06-30T00:22:53.003+0000] {SparkOracle2FileStore.py:139} INFO - no rows to upsert on table WDTIP_PGM_PARTICPTN
+[2023-06-30T00:23:02.790+0000] {SparkOracle2FileStore.py:143} INFO - Updating rows on table WDTIP_PGM_PARTICPTN
+[2023-06-30T00:23:22.752+0000] {job.py:216} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3320, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3399, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3369, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2203, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-06-30T00:23:58.316+0000] {job.py:216} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3320, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3399, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3369, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2203, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-06-30T00:25:39.698+0000] {job.py:216} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 212, in heartbeat
+    heartbeat_callback(session)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 73, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/local_task_job_runner.py", line 243, in heartbeat_callback
+    self.task_instance.refresh_from_db()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 811, in refresh_from_db
+    ti = qry.one_or_none()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2850, in one_or_none
+    return self._iter().one_or_none()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2916, in _iter
+    result = self.session.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3320, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3399, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3369, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2203, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-06-30T00:25:44.982+0000] {job.py:216} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3320, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3399, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3369, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2203, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-06-30T00:25:50.012+0000] {job.py:216} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3320, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3399, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3369, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2203, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

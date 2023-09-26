@@ -1,0 +1,20 @@
+[2023-06-29T23:49:33.417+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-29T23:49:32.177897+00:00 [queued]>
+[2023-06-29T23:49:33.422+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-29T23:49:32.177897+00:00 [queued]>
+[2023-06-29T23:49:33.422+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-29T23:49:33.428+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-29 23:49:32.177897+00:00
+[2023-06-29T23:49:33.432+0000] {standard_task_runner.py:57} INFO - Started process 82 to run task
+[2023-06-29T23:49:33.434+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore', 'execute_function_task', 'manual__2023-06-29T23:49:32.177897+00:00', '--job-id', '611', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmpb2wd5du4']
+[2023-06-29T23:49:33.436+0000] {standard_task_runner.py:85} INFO - Job 611: Subtask execute_function_task
+[2023-06-29T23:49:33.462+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore.execute_function_task manual__2023-06-29T23:49:32.177897+00:00 [running]> on host 7cad62d201c7
+[2023-06-29T23:49:33.507+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-29T23:49:32.177897+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-29T23:49:32.177897+00:00'
+[2023-06-29T23:49:33.508+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-06-29T23:49:33.508+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-06-29T23:49:33.508+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-06-29T23:49:36.681+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-06-29T23:49:36.682+0000] {client.py:192} INFO - Instantiated <InsecureClient(url='http://namenode:50070')>.
+[2023-06-29T23:49:36.683+0000] {client.py:1123} INFO - Listing '/'.
+[2023-06-29T23:49:36.699+0000] {logging_mixin.py:149} INFO - HDFS Connection Successfull
+[2023-06-29T23:49:36.699+0000] {logging_mixin.py:149} INFO - HDFS Detected and Connected
+[2023-06-29T23:49:36.699+0000] {logging_mixin.py:149} INFO - Spark Connection check - session found
+[2023-06-29T23:49:37.167+0000] {logging_mixin.py:149} INFO - Attempt to read Msql Table by query: select * from DeltaLake.OracleTablesLog
+        where OracleRows < 1000000 AND OracleRows > 10000 AND OracleSizeInMB < 2500 AND CountyFilter IS NOT NULL and PrimaryKeyColumn !=''

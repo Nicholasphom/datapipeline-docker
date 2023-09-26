@@ -1,0 +1,1022 @@
+[2023-06-01T18:28:44.232+0000] {processor.py:157} INFO - Started process (PID=110) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:28:44.233+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:28:44.233+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:28:44.233+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:28:44.235+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:28:44.235+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:28:44.235+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:28:44.248+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.017 seconds
+[2023-06-01T18:29:14.355+0000] {processor.py:157} INFO - Started process (PID=119) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:29:14.355+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:29:14.355+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:29:14.355+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:29:14.357+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:29:14.357+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:29:14.357+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:29:14.371+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.018 seconds
+[2023-06-01T18:29:44.481+0000] {processor.py:157} INFO - Started process (PID=128) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:29:44.482+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:29:44.482+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:29:44.482+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:29:44.484+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:29:44.483+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:29:44.484+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:29:44.497+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.017 seconds
+[2023-06-01T18:30:14.605+0000] {processor.py:157} INFO - Started process (PID=137) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:30:14.605+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:30:14.605+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:30:14.605+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:30:14.607+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:30:14.607+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:30:14.607+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:30:14.618+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.015 seconds
+[2023-06-01T18:30:44.721+0000] {processor.py:157} INFO - Started process (PID=146) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:30:44.740+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:30:44.740+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:30:44.740+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:30:44.742+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:30:44.742+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:30:44.742+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:30:44.764+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:31:14.878+0000] {processor.py:157} INFO - Started process (PID=155) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:31:14.896+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:31:14.896+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:31:14.896+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:31:14.898+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:31:14.898+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:31:14.898+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:31:14.921+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:31:45.031+0000] {processor.py:157} INFO - Started process (PID=164) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:31:45.049+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:31:45.050+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:31:45.050+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:31:45.052+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:31:45.051+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:31:45.052+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:31:45.076+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.046 seconds
+[2023-06-01T18:32:15.181+0000] {processor.py:157} INFO - Started process (PID=173) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:32:15.199+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:32:15.199+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:32:15.199+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:32:15.201+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:32:15.201+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:32:15.202+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:32:15.223+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:32:45.327+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:32:45.348+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:32:45.348+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:32:45.348+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:32:45.350+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:32:45.350+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:32:45.350+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:32:45.371+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.046 seconds
+[2023-06-01T18:33:15.484+0000] {processor.py:157} INFO - Started process (PID=191) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:33:15.502+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:33:15.503+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:33:15.503+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:33:15.505+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:33:15.504+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:33:15.505+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:33:15.526+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:33:45.643+0000] {processor.py:157} INFO - Started process (PID=200) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:33:45.661+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:33:45.662+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:33:45.662+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:33:45.664+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:33:45.663+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:33:45.664+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:33:45.685+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:34:15.803+0000] {processor.py:157} INFO - Started process (PID=209) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:34:15.820+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:34:15.820+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:34:15.820+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:34:15.822+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:34:15.822+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:34:15.822+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:34:15.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:34:45.958+0000] {processor.py:157} INFO - Started process (PID=218) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:34:45.976+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:34:45.976+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:34:45.976+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:34:45.978+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:34:45.978+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:34:45.979+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:34:46.001+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.045 seconds
+[2023-06-01T18:35:16.114+0000] {processor.py:157} INFO - Started process (PID=227) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:35:16.132+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:35:16.133+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:35:16.133+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:35:16.134+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:35:16.134+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:35:16.135+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:35:16.156+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:35:46.272+0000] {processor.py:157} INFO - Started process (PID=236) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:35:46.292+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:35:46.292+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:35:46.292+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:35:46.294+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:35:46.294+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:35:46.294+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:35:46.316+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.045 seconds
+[2023-06-01T18:36:16.430+0000] {processor.py:157} INFO - Started process (PID=245) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:36:16.448+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:36:16.448+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:36:16.448+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:36:16.450+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:36:16.450+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:36:16.450+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:36:16.472+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:36:46.588+0000] {processor.py:157} INFO - Started process (PID=254) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:36:46.607+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:36:46.607+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:36:46.607+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:36:46.609+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:36:46.608+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:36:46.609+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:36:46.632+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.045 seconds
+[2023-06-01T18:37:16.743+0000] {processor.py:157} INFO - Started process (PID=263) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:37:16.761+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:37:16.761+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:37:16.761+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:37:16.763+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:37:16.762+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:37:16.763+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:37:16.784+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:37:46.897+0000] {processor.py:157} INFO - Started process (PID=272) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:37:46.914+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:37:46.915+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:37:46.915+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:37:46.917+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:37:46.916+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:37:46.917+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:37:46.938+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:38:17.055+0000] {processor.py:157} INFO - Started process (PID=281) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:38:17.074+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:38:17.074+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:38:17.074+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:38:17.076+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:38:17.076+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:38:17.076+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:38:17.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:38:47.223+0000] {processor.py:157} INFO - Started process (PID=290) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:38:47.242+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:38:47.243+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:38:47.243+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:38:47.245+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:38:47.244+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:38:47.245+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:38:47.267+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.046 seconds
+[2023-06-01T18:39:17.378+0000] {processor.py:157} INFO - Started process (PID=299) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:39:17.379+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:39:17.379+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:39:17.379+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:39:17.381+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:39:17.381+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:39:17.382+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:39:17.401+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:39:42.830+0000] {processor.py:157} INFO - Started process (PID=24) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:39:42.831+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:39:42.831+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:39:42.831+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:39:42.833+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:39:42.832+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:39:42.833+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:39:42.854+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.026 seconds
+[2023-06-01T18:40:12.958+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:40:12.976+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:40:12.976+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:40:12.976+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:40:12.978+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:40:12.978+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:40:12.978+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:40:12.997+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.042 seconds
+[2023-06-01T18:40:43.084+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:40:43.102+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:40:43.102+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:40:43.102+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:40:43.104+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:40:43.103+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:40:43.104+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:40:43.125+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:41:13.231+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:41:13.249+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:41:13.250+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:41:13.250+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:41:13.251+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:41:13.251+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:41:13.252+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:41:13.273+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:41:43.389+0000] {processor.py:157} INFO - Started process (PID=60) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:41:43.407+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:41:43.407+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:41:43.407+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:41:43.409+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:41:43.408+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:41:43.409+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:41:43.431+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:42:13.539+0000] {processor.py:157} INFO - Started process (PID=69) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:42:13.539+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:42:13.540+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:42:13.540+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:42:13.541+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:42:13.541+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:42:13.542+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:42:13.554+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.017 seconds
+[2023-06-01T18:42:47.251+0000] {processor.py:157} INFO - Started process (PID=24) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:42:47.252+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:42:47.252+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:42:47.252+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:42:47.255+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:42:47.254+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:42:47.255+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:42:47.274+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:43:17.381+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:43:17.399+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:43:17.399+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:43:17.399+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:43:17.401+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:43:17.400+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:43:17.401+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:43:17.422+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:43:47.531+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:43:47.533+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:43:47.533+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:43:47.533+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:43:47.535+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:43:47.534+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:43:47.535+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:43:47.574+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.045 seconds
+[2023-06-01T18:44:17.686+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:44:17.704+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:44:17.705+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:44:17.705+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:44:17.707+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:44:17.706+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:44:17.707+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:44:17.728+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:44:47.836+0000] {processor.py:157} INFO - Started process (PID=60) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:44:47.855+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:44:47.856+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:44:47.856+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:44:47.857+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:44:47.857+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:44:47.858+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:44:47.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.045 seconds
+[2023-06-01T18:45:17.989+0000] {processor.py:157} INFO - Started process (PID=69) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:45:18.007+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:45:18.007+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:45:18.007+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:45:18.009+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:45:18.009+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:45:18.009+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:45:18.032+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.045 seconds
+[2023-06-01T18:45:48.138+0000] {processor.py:157} INFO - Started process (PID=78) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:45:48.157+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:45:48.157+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:45:48.157+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:45:48.159+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:45:48.159+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:45:48.159+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:45:48.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:46:18.291+0000] {processor.py:157} INFO - Started process (PID=87) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:46:18.310+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:46:18.310+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:46:18.310+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:46:18.312+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:46:18.311+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:46:18.312+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:46:18.333+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:46:48.439+0000] {processor.py:157} INFO - Started process (PID=96) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:46:48.458+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:46:48.458+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:46:48.458+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:46:48.460+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:46:48.459+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:46:48.460+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:46:48.482+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.045 seconds
+[2023-06-01T18:47:18.597+0000] {processor.py:157} INFO - Started process (PID=105) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:47:18.615+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:47:18.615+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:47:18.615+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:47:18.617+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:47:18.617+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:47:18.617+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:47:18.638+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.043 seconds
+[2023-06-01T18:47:53.495+0000] {processor.py:157} INFO - Started process (PID=24) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:47:53.513+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:47:53.513+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:47:53.513+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:47:53.516+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:47:53.515+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:47:53.516+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:47:53.541+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.049 seconds
+[2023-06-01T18:48:23.606+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:48:23.625+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:48:23.625+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:48:23.625+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:48:23.627+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:48:23.627+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:48:23.627+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:48:23.647+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.042 seconds
+[2023-06-01T18:48:53.723+0000] {processor.py:157} INFO - Started process (PID=54) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:48:53.726+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:48:53.726+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:48:53.726+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:48:53.728+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:48:53.727+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:48:53.728+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:48:53.747+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.026 seconds
+[2023-06-01T18:49:31.218+0000] {processor.py:157} INFO - Started process (PID=24) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:49:31.236+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:49:31.237+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:49:31.237+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:49:31.239+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:49:31.238+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:49:31.239+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:49:31.261+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.045 seconds
+[2023-06-01T18:50:01.363+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:50:01.363+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:50:01.364+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:50:01.364+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:50:01.365+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:50:01.365+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:50:01.366+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:50:01.377+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.015 seconds
+[2023-06-01T18:50:31.475+0000] {processor.py:157} INFO - Started process (PID=65) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:50:31.475+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:50:31.476+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:50:31.475+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:50:31.477+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:50:31.477+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:50:31.477+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:50:31.496+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:51:01.594+0000] {processor.py:157} INFO - Started process (PID=86) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:51:01.595+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:51:01.596+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:51:01.596+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:51:01.598+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:51:01.597+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:51:01.598+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:51:01.609+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.017 seconds
+[2023-06-01T18:51:33.916+0000] {processor.py:157} INFO - Started process (PID=24) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:51:33.933+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:51:33.934+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:51:33.934+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:51:33.936+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:51:33.935+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:51:33.936+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:51:33.959+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.044 seconds
+[2023-06-01T18:52:04.092+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:52:04.093+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:52:04.093+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:52:04.093+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:52:04.095+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:52:04.094+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:52:04.095+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:52:04.107+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.016 seconds
+[2023-06-01T18:52:34.210+0000] {processor.py:157} INFO - Started process (PID=53) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:52:34.211+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:52:34.212+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:52:34.211+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:52:34.214+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:52:34.213+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:52:34.214+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:52:34.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:53:05.370+0000] {processor.py:157} INFO - Started process (PID=24) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:53:05.370+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:53:05.371+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:53:05.371+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:53:05.373+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:53:05.372+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:53:05.373+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:53:05.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.020 seconds
+[2023-06-01T18:53:35.487+0000] {processor.py:157} INFO - Started process (PID=43) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:53:35.487+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:53:35.487+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:53:35.487+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:53:35.489+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:53:35.489+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:53:35.489+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:53:35.500+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.015 seconds
+[2023-06-01T18:54:05.597+0000] {processor.py:157} INFO - Started process (PID=64) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:54:05.598+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:54:05.598+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:54:05.598+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:54:05.600+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:54:05.599+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:54:05.600+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:54:05.619+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:54:35.719+0000] {processor.py:157} INFO - Started process (PID=85) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:54:35.720+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:54:35.720+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:54:35.720+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:54:35.722+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:54:35.721+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:54:35.722+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:54:35.733+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.015 seconds
+[2023-06-01T18:55:05.831+0000] {processor.py:157} INFO - Started process (PID=106) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:55:05.832+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:55:05.833+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:55:05.833+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:55:05.835+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:55:05.834+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:55:05.835+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:55:05.854+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.025 seconds
+[2023-06-01T18:55:35.956+0000] {processor.py:157} INFO - Started process (PID=127) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:55:35.957+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:55:35.958+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:55:35.958+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:55:35.959+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:55:35.959+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:55:35.960+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:55:35.972+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.017 seconds
+[2023-06-01T18:56:06.082+0000] {processor.py:157} INFO - Started process (PID=148) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:56:06.083+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:56:06.084+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:56:06.083+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:56:06.085+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:56:06.085+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:56:06.085+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:56:06.105+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.025 seconds
+[2023-06-01T18:56:36.204+0000] {processor.py:157} INFO - Started process (PID=169) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:56:36.205+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:56:36.205+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:56:36.205+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:56:36.207+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:56:36.207+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:56:36.207+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:56:36.220+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.018 seconds
+[2023-06-01T18:57:06.317+0000] {processor.py:157} INFO - Started process (PID=190) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:57:06.319+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:57:06.319+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:57:06.319+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:57:06.321+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:57:06.320+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:57:06.321+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:57:06.340+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:57:36.432+0000] {processor.py:157} INFO - Started process (PID=211) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:57:36.433+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:57:36.433+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:57:36.433+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:57:36.435+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:57:36.435+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:57:36.435+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:57:36.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:58:06.558+0000] {processor.py:157} INFO - Started process (PID=232) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:58:06.559+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:58:06.560+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:58:06.559+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:58:06.562+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:58:06.561+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:58:06.562+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:58:06.580+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:58:36.676+0000] {processor.py:157} INFO - Started process (PID=253) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:58:36.677+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:58:36.677+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:58:36.677+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:58:36.679+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:58:36.678+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:58:36.679+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:58:36.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T18:59:06.792+0000] {processor.py:157} INFO - Started process (PID=274) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:59:06.793+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:59:06.794+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:59:06.793+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:59:06.795+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:59:06.795+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:59:06.796+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:59:06.808+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.017 seconds
+[2023-06-01T18:59:36.897+0000] {processor.py:157} INFO - Started process (PID=295) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:59:36.899+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T18:59:36.899+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:59:36.899+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:59:36.901+0000] {logging_mixin.py:149} INFO - [2023-06-01T18:59:36.900+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T18:59:36.901+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T18:59:36.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T19:00:07.008+0000] {processor.py:157} INFO - Started process (PID=316) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:00:07.010+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:00:07.010+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:00:07.010+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:00:07.012+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:00:07.011+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:00:07.012+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:00:07.031+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.025 seconds
+[2023-06-01T19:00:37.125+0000] {processor.py:157} INFO - Started process (PID=337) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:00:37.127+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:00:37.127+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:00:37.127+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:00:37.129+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:00:37.129+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:00:37.129+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:00:37.148+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T19:01:07.231+0000] {processor.py:157} INFO - Started process (PID=358) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:01:07.232+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:01:07.233+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:01:07.232+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:01:07.234+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:01:07.234+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:01:07.234+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:01:07.253+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.025 seconds
+[2023-06-01T19:01:37.344+0000] {processor.py:157} INFO - Started process (PID=379) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:01:37.345+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:01:37.346+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:01:37.346+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:01:37.347+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:01:37.347+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:01:37.348+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:01:37.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.027 seconds
+[2023-06-01T19:02:07.452+0000] {processor.py:157} INFO - Started process (PID=400) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:02:07.454+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:02:07.454+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:02:07.454+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:02:07.456+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:02:07.456+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:02:07.456+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:02:07.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.025 seconds
+[2023-06-01T19:02:37.559+0000] {processor.py:157} INFO - Started process (PID=421) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:02:37.560+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:02:37.560+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:02:37.560+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:02:37.562+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:02:37.562+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:02:37.562+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:02:37.581+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.024 seconds
+[2023-06-01T19:03:07.671+0000] {processor.py:157} INFO - Started process (PID=442) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:03:07.673+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:03:07.673+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:03:07.673+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:03:07.675+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:03:07.675+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:03:07.675+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:03:07.695+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.026 seconds
+[2023-06-01T19:03:37.776+0000] {processor.py:157} INFO - Started process (PID=463) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:03:37.777+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:03:37.778+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:03:37.778+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:03:37.780+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:03:37.779+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:03:37.780+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:03:37.799+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.025 seconds
+[2023-06-01T19:04:07.876+0000] {processor.py:157} INFO - Started process (PID=484) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:04:07.878+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:04:07.878+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:04:07.878+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:04:07.880+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:04:07.879+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:04:07.880+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:04:07.900+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.026 seconds
+[2023-06-01T19:04:37.982+0000] {processor.py:157} INFO - Started process (PID=505) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:04:37.983+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:04:37.984+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:04:37.984+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:04:37.986+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:04:37.985+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:04:37.986+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:04:38.005+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.025 seconds
+[2023-06-01T19:05:08.092+0000] {processor.py:157} INFO - Started process (PID=526) to work on /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:05:08.094+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Csv2Delta_dag.py for tasks to queue
+[2023-06-01T19:05:08.094+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:05:08.094+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:05:08.096+0000] {logging_mixin.py:149} INFO - [2023-06-01T19:05:08.096+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Csv2Delta_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Csv2Delta_dag.py", line 8, in <module>
+    from utils.CsvDagWrapper import RunCsvToDelta
+ModuleNotFoundError: No module named 'utils'
+[2023-06-01T19:05:08.096+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Csv2Delta_dag.py
+[2023-06-01T19:05:08.115+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Csv2Delta_dag.py took 0.025 seconds

@@ -1,0 +1,28 @@
+[2023-06-16T01:00:01.326+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task scheduled__2023-06-16T00:00:00+00:00 [queued]>
+[2023-06-16T01:00:01.329+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wrapper_ex_dag.execute_function_task scheduled__2023-06-16T00:00:00+00:00 [queued]>
+[2023-06-16T01:00:01.330+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-16T01:00:01.335+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-16 00:00:00+00:00
+[2023-06-16T01:00:01.338+0000] {standard_task_runner.py:57} INFO - Started process 4244 to run task
+[2023-06-16T01:00:01.340+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'wrapper_ex_dag', 'execute_function_task', 'scheduled__2023-06-16T00:00:00+00:00', '--job-id', '290', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/custom_dags/WrapperDag.py', '--cfg-path', '/tmp/tmpod5x3_ud']
+[2023-06-16T01:00:01.342+0000] {standard_task_runner.py:85} INFO - Job 290: Subtask execute_function_task
+[2023-06-16T01:00:01.364+0000] {task_command.py:410} INFO - Running <TaskInstance: wrapper_ex_dag.execute_function_task scheduled__2023-06-16T00:00:00+00:00 [running]> on host 6fb96d18f9da
+[2023-06-16T01:00:01.401+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wrapper_ex_dag' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-16T00:00:00+00:00'
+[2023-06-16T01:00:01.402+0000] {CsvDagWrapper.py:22} INFO - CSV Delta Class Initialted
+[2023-06-16T01:00:01.402+0000] {logging_mixin.py:149} INFO - Environment successfully parsed! Environment is Local
+[2023-06-16T01:00:01.402+0000] {CsvDagWrapper.py:39} INFO - Environment successfully parsed! Environment is Local
+[2023-06-16T01:00:01.402+0000] {logging_mixin.py:149} INFO - Table/s successfully parsed! Table:  ['CASE', 'PTR']
+[2023-06-16T01:00:01.402+0000] {CsvDagWrapper.py:44} INFO - Table/s successfully parsed! Table:  ['CASE', 'PTR']
+[2023-06-16T01:00:01.402+0000] {logging_mixin.py:149} INFO - Number of tables to be processed = 2
+[2023-06-16T01:00:01.402+0000] {logging_mixin.py:149} INFO - TABLE_NAME IN ('CASE', 'PTR')
+[2023-06-16T01:00:01.402+0000] {CsvDagWrapper.py:60} INFO - Works so far....
+[2023-06-16T01:00:03.385+0000] {CsvDagWrapper.py:63} INFO - test
+[2023-06-16T01:00:03.431+0000] {logging_mixin.py:149} INFO - This program loads CSV files into Local Delta Store!
+[2023-06-16T01:00:03.436+0000] {logging_mixin.py:149} INFO - Task Ran successfully so far....
+[2023-06-16T01:00:03.436+0000] {logging_mixin.py:149} INFO - ---------------------------------------------------------------------------------------------------------------------------------------
+[2023-06-16T01:00:03.436+0000] {logging_mixin.py:149} INFO - Working on calsaws.CASE
+[2023-06-16T01:00:05.835+0000] {logging_mixin.py:149} INFO - Database 'calsaws' not found
+[2023-06-16T01:00:05.866+0000] {logging_mixin.py:149} INFO - Good Bye!
+[2023-06-16T01:00:05.866+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-16T01:00:05.871+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=wrapper_ex_dag, task_id=execute_function_task, execution_date=20230616T000000, start_date=20230616T010001, end_date=20230616T010005
+[2023-06-16T01:00:05.884+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-16T01:00:05.893+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

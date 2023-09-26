@@ -1,0 +1,21 @@
+[2023-07-12T00:13:17.433+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.execute_task2 manual__2023-07-12T00:13:15.740996+00:00 [queued]>
+[2023-07-12T00:13:17.438+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.execute_task2 manual__2023-07-12T00:13:15.740996+00:00 [queued]>
+[2023-07-12T00:13:17.438+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-12T00:13:17.444+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_task2> on 2023-07-12 00:13:15.740996+00:00
+[2023-07-12T00:13:17.447+0000] {standard_task_runner.py:57} INFO - Started process 60 to run task
+[2023-07-12T00:13:17.450+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore_Concurrent', 'execute_task2', 'manual__2023-07-12T00:13:15.740996+00:00', '--job-id', '1093', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmptgmz31ny']
+[2023-07-12T00:13:17.451+0000] {standard_task_runner.py:85} INFO - Job 1093: Subtask execute_task2
+[2023-07-12T00:13:17.475+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore_Concurrent.execute_task2 manual__2023-07-12T00:13:15.740996+00:00 [running]> on host 876817aabcc6
+[2023-07-12T00:13:17.517+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore_Concurrent' AIRFLOW_CTX_TASK_ID='execute_task2' AIRFLOW_CTX_EXECUTION_DATE='2023-07-12T00:13:15.740996+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-12T00:13:15.740996+00:00'
+[2023-07-12T00:13:17.518+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-12T00:13:17.518+0000] {logging_mixin.py:149} INFO - Error creating SparkSession: SparkContextManager.init_sc() missing 1 required positional argument: 'check_for_spark_context'
+[2023-07-12T00:13:17.518+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-12T00:13:17.518+0000] {logging_mixin.py:149} INFO - Error creating SparkSession: SparkContextManager.init_sc() missing 1 required positional argument: 'check_for_spark_context'
+[2023-07-12T00:13:17.518+0000] {logging_mixin.py:149} INFO - Attempt to read Msql Table by query: select * from DeltaLake.OracleTablesLog
+        where OracleRows < 10000000 AND OracleRows > 0 AND CountyFilter IS NOT NULL and PrimaryKeyColumn !=''
+[2023-07-12T00:13:17.518+0000] {logging_mixin.py:149} INFO - Read on Mssql table failed: 'NoneType' object has no attribute 'read'
+[2023-07-12T00:13:17.518+0000] {SparkOracle2FileStore.py:202} INFO - Error Running Pipeline:'NoneType' object has no attribute 'toPandas'
+[2023-07-12T00:13:17.519+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-12T00:13:17.523+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=Oracle_to_Filestore_Concurrent, task_id=execute_task2, execution_date=20230712T001315, start_date=20230712T001317, end_date=20230712T001317
+[2023-07-12T00:13:17.541+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-12T00:13:17.549+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

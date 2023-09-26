@@ -1,0 +1,14 @@
+[2023-07-11T23:03:54.730+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.do_nothing__1 manual__2023-07-11T23:03:53.232443+00:00 [queued]>
+[2023-07-11T23:03:54.734+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.do_nothing__1 manual__2023-07-11T23:03:53.232443+00:00 [queued]>
+[2023-07-11T23:03:54.735+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-11T23:03:54.745+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): do_nothing__1> on 2023-07-11 23:03:53.232443+00:00
+[2023-07-11T23:03:54.748+0000] {standard_task_runner.py:57} INFO - Started process 77 to run task
+[2023-07-11T23:03:54.750+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore_Concurrent', 'do_nothing__1', 'manual__2023-07-11T23:03:53.232443+00:00', '--job-id', '1050', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmp88qojdi3']
+[2023-07-11T23:03:54.752+0000] {standard_task_runner.py:85} INFO - Job 1050: Subtask do_nothing__1
+[2023-07-11T23:03:54.778+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore_Concurrent.do_nothing__1 manual__2023-07-11T23:03:53.232443+00:00 [running]> on host 876817aabcc6
+[2023-07-11T23:03:54.822+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore_Concurrent' AIRFLOW_CTX_TASK_ID='do_nothing__1' AIRFLOW_CTX_EXECUTION_DATE='2023-07-11T23:03:53.232443+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-11T23:03:53.232443+00:00'
+[2023-07-11T23:03:54.822+0000] {logging_mixin.py:149} INFO - Doing Nothing
+[2023-07-11T23:03:54.823+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-11T23:03:54.827+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=Oracle_to_Filestore_Concurrent, task_id=do_nothing__1, execution_date=20230711T230353, start_date=20230711T230354, end_date=20230711T230354
+[2023-07-11T23:03:54.841+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-11T23:03:54.853+0000] {taskinstance.py:2651} INFO - 2 downstream tasks scheduled from follow-on schedule check

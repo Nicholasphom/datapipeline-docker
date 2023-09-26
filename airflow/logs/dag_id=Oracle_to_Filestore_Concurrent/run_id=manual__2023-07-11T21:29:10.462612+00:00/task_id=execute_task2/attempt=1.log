@@ -1,0 +1,809 @@
+[2023-07-11T21:29:11.342+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.execute_task2 manual__2023-07-11T21:29:10.462612+00:00 [queued]>
+[2023-07-11T21:29:11.346+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.execute_task2 manual__2023-07-11T21:29:10.462612+00:00 [queued]>
+[2023-07-11T21:29:11.346+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-11T21:29:11.354+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_task2> on 2023-07-11 21:29:10.462612+00:00
+[2023-07-11T21:29:11.356+0000] {standard_task_runner.py:57} INFO - Started process 57 to run task
+[2023-07-11T21:29:11.358+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore_Concurrent', 'execute_task2', 'manual__2023-07-11T21:29:10.462612+00:00', '--job-id', '1024', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmpo62any9b']
+[2023-07-11T21:29:11.360+0000] {standard_task_runner.py:85} INFO - Job 1024: Subtask execute_task2
+[2023-07-11T21:29:11.385+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore_Concurrent.execute_task2 manual__2023-07-11T21:29:10.462612+00:00 [running]> on host 876817aabcc6
+[2023-07-11T21:29:11.430+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore_Concurrent' AIRFLOW_CTX_TASK_ID='execute_task2' AIRFLOW_CTX_EXECUTION_DATE='2023-07-11T21:29:10.462612+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-11T21:29:10.462612+00:00'
+[2023-07-11T21:29:11.431+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T21:29:11.431+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T21:29:11.431+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-07-11T21:29:11.431+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-07-11T21:29:14.465+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-07-11T21:29:14.465+0000] {logging_mixin.py:149} INFO - Spark Connection check - session found
+[2023-07-11T21:29:15.035+0000] {logging_mixin.py:149} INFO - Attempt to read Msql Table by query: select * from DeltaLake.OracleTablesLog
+        where OracleRows < 1000000 AND OracleRows > 10000 AND OracleSizeInMB < 2500 AND CountyFilter IS NOT NULL and PrimaryKeyColumn !=''
+[2023-07-11T21:29:18.667+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T21:29:18.668+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T21:29:18.669+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T21:29:18.673+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T21:29:18.673+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T21:29:18.674+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T21:29:18.675+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T21:29:18.676+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T21:29:18.688+0000] {SparkOracle2FileStore.py:82} INFO - Skipping log tables and reading tables directly
+[2023-07-11T21:29:18.688+0000] {SparkOracle2FileStore.py:92} INFO - processing 1 out of 22
+[2023-07-11T21:29:18.689+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.TAX_INTRCPT
+[2023-07-11T21:29:18.689+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:20.647+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.TAX_INTRCPT
+[2023-07-11T21:29:20.647+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:21.821+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:22.399+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:22.400+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:24.458+0000] {SparkOracle2FileStore.py:115} INFO - 173371
+[2023-07-11T21:29:24.458+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:25.636+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/TAX_INTRCPT
+[2023-07-11T21:29:25.636+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:25.636+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:25.636+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:42.172+0000] {SparkOracle2FileStore.py:183} INFO - Table Processing complete for PR_LRS.TAX_INTRCPT
+[2023-07-11T21:29:42.266+0000] {SparkOracle2FileStore.py:92} INFO - processing 2 out of 22
+[2023-07-11T21:29:42.266+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column HST_ID on table PR_LRS.WTW_24_MONTH_SIGN_DATE_HST
+[2023-07-11T21:29:42.267+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:43.398+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column HST_ID on table PR_LRS.WTW_24_MONTH_SIGN_DATE_HST
+[2023-07-11T21:29:43.398+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:44.613+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:45.162+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:45.162+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:46.408+0000] {SparkOracle2FileStore.py:115} INFO - 347499
+[2023-07-11T21:29:46.408+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:47.626+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/WTW_24_MONTH_SIGN_DATE_HST
+[2023-07-11T21:29:47.626+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:47.626+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:47.626+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:56.713+0000] {local_task_job_runner.py:291} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-07-11T21:29:56.714+0000] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 57. PIDs of all processes in the group: [59, 57]
+[2023-07-11T21:29:56.715+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 57
+[2023-07-11T21:29:56.715+0000] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-07-11T21:29:56.715+0000] {clientserver.py:538} INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1519, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-07-11T21:29:56.716+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:56.716+0000] {java_gateway.py:1055} ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1519, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2023-07-11T21:29:56.717+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:56.717+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:An error occurred while calling o183.save
+[2023-07-11T21:29:56.718+0000] {SparkOracle2FileStore.py:183} INFO - Table Processing complete for PR_LRS.WTW_24_MONTH_SIGN_DATE_HST
+[2023-07-11T21:29:56.805+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:56.805+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.COUNTY_PARAMTR_ADMIN
+[2023-07-11T21:29:56.805+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.167+0000] {clientserver.py:538} INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+[2023-07-11T21:29:57.167+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.167+0000] {java_gateway.py:1055} ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2023-07-11T21:29:57.167+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: An error occurred while calling o192.load
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.COUNTY_PARAMTR_ADMIN
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.168+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.168+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.168+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.COUNTY_PARAMTR_ADMIN, reading without partition 
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.168+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.168+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.168+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.168+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.168+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.168+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.168+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.168+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.169+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/COUNTY_PARAMTR_ADMIN
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.169+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.169+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.169+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.COUNTY_PARAMTR_ADMIN:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.169+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.OCAT
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.169+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.169+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.OCAT
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.169+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.169+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.169+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.OCAT, reading without partition 
+[2023-07-11T21:29:57.169+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.170+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.170+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.170+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.170+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.170+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.170+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.170+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.170+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/OCAT
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.170+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.170+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.170+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.OCAT:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.170+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WDTIP_EXCEED_CLOCK
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.170+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.170+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.170+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WDTIP_EXCEED_CLOCK
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.171+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.171+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.171+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.WDTIP_EXCEED_CLOCK, reading without partition 
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.171+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.171+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.171+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.171+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.171+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.171+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/WDTIP_EXCEED_CLOCK
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.171+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.171+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.171+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.171+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.WDTIP_EXCEED_CLOCK:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.172+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.AUTO_ACTN
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.172+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.172+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.AUTO_ACTN
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.172+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.172+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.172+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.AUTO_ACTN, reading without partition 
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.172+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.172+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.172+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.172+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.172+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.172+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.172+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.173+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.173+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.173+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.173+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/AUTO_ACTN
+[2023-07-11T21:29:57.173+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.173+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.173+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.173+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.173+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.AUTO_ACTN:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.173+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.173+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IFD_DUPL_DETL
+[2023-07-11T21:29:57.173+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.173+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.173+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.173+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IFD_DUPL_DETL
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.174+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.174+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.174+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.IFD_DUPL_DETL, reading without partition 
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.174+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.174+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.174+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.174+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.174+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.174+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.174+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/IFD_DUPL_DETL
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.175+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.175+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.175+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.IFD_DUPL_DETL:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.175+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.EBT_FRAUD_ACTIV
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.175+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.175+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.EBT_FRAUD_ACTIV
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.175+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.175+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.175+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.176+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.EBT_FRAUD_ACTIV, reading without partition 
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.176+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.176+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.176+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.176+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.176+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.176+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.176+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.176+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/EBT_FRAUD_ACTIV
+[2023-07-11T21:29:57.176+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.177+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.177+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.177+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.EBT_FRAUD_ACTIV:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.177+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.GA_GR_TIME_LIMIT
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.177+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.177+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.GA_GR_TIME_LIMIT
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.177+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.177+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.177+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.GA_GR_TIME_LIMIT, reading without partition 
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.177+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.177+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.178+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.178+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.178+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.178+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.178+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.178+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.178+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.178+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.178+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.178+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.178+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.178+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/GA_GR_TIME_LIMIT
+[2023-07-11T21:29:57.178+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.178+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.178+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.178+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.178+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.GA_GR_TIME_LIMIT:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.179+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.GRP_HOMES
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.179+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.179+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.GRP_HOMES
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.179+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.179+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.179+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.GRP_HOMES, reading without partition 
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.179+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.179+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.179+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.179+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.179+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.179+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.179+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.180+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.180+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.180+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.180+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/GRP_HOMES
+[2023-07-11T21:29:57.180+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.180+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.180+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.180+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.180+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.GRP_HOMES:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.180+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.ASSET_VERIF
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.181+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.181+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.ASSET_VERIF
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.181+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.181+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.181+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.ASSET_VERIF, reading without partition 
+[2023-07-11T21:29:57.181+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.181+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.182+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.182+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.182+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.182+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.182+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.182+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.182+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/ASSET_VERIF
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.182+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.182+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.182+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.ASSET_VERIF:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.182+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.FUND_CODE_MAP
+[2023-07-11T21:29:57.182+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.182+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.FUND_CODE_MAP
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.183+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.FUND_CODE_MAP, reading without partition 
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.183+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.183+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/FUND_CODE_MAP
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.184+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.184+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.184+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.FUND_CODE_MAP:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.184+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.C4Y_OTHER_PGM_ASSIST
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.184+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.184+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.C4Y_OTHER_PGM_ASSIST
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.184+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.184+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.184+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.C4Y_OTHER_PGM_ASSIST, reading without partition 
+[2023-07-11T21:29:57.184+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.185+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.185+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.185+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.185+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.185+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.185+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.185+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.185+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.185+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.185+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.185+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.185+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.185+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.185+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/C4Y_OTHER_PGM_ASSIST
+[2023-07-11T21:29:57.185+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.185+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.185+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.185+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.186+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.C4Y_OTHER_PGM_ASSIST:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.186+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IEVS_FF_MEDS
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.186+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.186+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IEVS_FF_MEDS
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.186+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.186+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.186+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.IEVS_FF_MEDS, reading without partition 
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.186+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.186+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.186+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.186+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.186+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.187+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.187+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.187+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.187+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.187+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.187+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.187+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/IEVS_FF_MEDS
+[2023-07-11T21:29:57.187+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.187+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.187+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.187+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.187+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.IEVS_FF_MEDS:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.188+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.COLLAB_CONTRACT
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.188+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.188+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.COLLAB_CONTRACT
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.188+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.188+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.188+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.COLLAB_CONTRACT, reading without partition 
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.188+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.188+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.188+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.188+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.188+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.188+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.188+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.189+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.189+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/COLLAB_CONTRACT
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.189+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.189+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.189+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.COLLAB_CONTRACT:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.189+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WDTIP_APPRCH_CLOCK
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.189+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.189+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WDTIP_APPRCH_CLOCK
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.189+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.189+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.189+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.WDTIP_APPRCH_CLOCK, reading without partition 
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.189+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.189+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.189+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.189+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.190+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.190+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.190+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.190+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.190+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/WDTIP_APPRCH_CLOCK
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.190+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.190+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.190+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.WDTIP_APPRCH_CLOCK:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.190+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.EXTRNL_STAFF_COUNTY_STAT
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.190+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.190+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.EXTRNL_STAFF_COUNTY_STAT
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.190+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.190+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.190+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.191+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.EXTRNL_STAFF_COUNTY_STAT, reading without partition 
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.191+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.191+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.191+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.191+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.191+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.191+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.191+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.191+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/EXTRNL_STAFF_COUNTY_STAT
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.191+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.191+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.191+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.192+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.EXTRNL_STAFF_COUNTY_STAT:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.192+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.VEND_IDENTIF
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.192+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.192+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.VEND_IDENTIF
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.192+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.192+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.192+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.VEND_IDENTIF, reading without partition 
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.192+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.192+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.192+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.192+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.192+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.192+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.192+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.193+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.193+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.193+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.193+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.193+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/VEND_IDENTIF
+[2023-07-11T21:29:57.193+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.193+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.193+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.193+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.193+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.VEND_IDENTIF:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.193+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.193+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.OCAT_PERS
+[2023-07-11T21:29:57.193+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.OCAT_PERS
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.194+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.OCAT_PERS, reading without partition 
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.194+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/OCAT_PERS
+[2023-07-11T21:29:57.195+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.195+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.195+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.195+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.195+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.OCAT_PERS:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.195+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.195+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column HST_ID on table PR_LRS.MEDS_ALERT_CONFIG_HST
+[2023-07-11T21:29:57.195+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.195+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.195+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.195+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column HST_ID on table PR_LRS.MEDS_ALERT_CONFIG_HST
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.196+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.196+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.196+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.MEDS_ALERT_CONFIG_HST, reading without partition 
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.196+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.196+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.196+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.196+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.196+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.196+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.196+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/MEDS_ALERT_CONFIG_HST
+[2023-07-11T21:29:57.197+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.197+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.197+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.197+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.197+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.MEDS_ALERT_CONFIG_HST:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.197+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.197+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WPR_SAMPLE_CASE
+[2023-07-11T21:29:57.197+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.197+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WPR_SAMPLE_CASE
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.198+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.WPR_SAMPLE_CASE, reading without partition 
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.198+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.198+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/WPR_SAMPLE_CASE
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.199+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.199+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.199+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.WPR_SAMPLE_CASE:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.199+0000] {SparkOracle2FileStore.py:92} INFO - processing 3 out of 22
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.PERS_TIME_TRACK_DETL
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.199+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.199+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Could not get min count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.PERS_TIME_TRACK_DETL
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T21:29:57.199+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by query: [Errno 111] Connection refused
+[2023-07-11T21:29:57.199+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.199+0000] {logging_mixin.py:149} INFO - Could not get max count: 'NoneType' object has no attribute 'head'
+[2023-07-11T21:29:57.200+0000] {SparkOracle2FileStore.py:102} INFO - could not reliablily get upper and lower bounds of table PR_LRS.PERS_TIME_TRACK_DETL, reading without partition 
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T21:29:57.200+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Read on oracle table failed: [Errno 111] Connection refused
+[2023-07-11T21:29:57.200+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.200+0000] {SparkOracle2FileStore.py:112} INFO - Filter Processor Disabled
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.200+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.200+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.200+0000] {SparkOracle2FileStore.py:115} INFO - None
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T21:29:57.200+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Error in reading oracle table by rowcount: [Errno 111] Connection refused
+[2023-07-11T21:29:57.200+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/PERS_TIME_TRACK_DETL
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Returning True
+[2023-07-11T21:29:57.200+0000] {SparkOracle2FileStore.py:177} INFO - Should not go in here if table dir exists
+[2023-07-11T21:29:57.200+0000] {SparkOracle2FileStore.py:178} INFO - Overwriting table since ForceTable is enabled or directory does not exist, check logs
+[2023-07-11T21:29:57.200+0000] {logging_mixin.py:149} INFO - Error in writing dataframe:'NoneType' object has no attribute 'write'
+[2023-07-11T21:29:57.200+0000] {SparkOracle2FileStore.py:196} INFO - Error Processing Table PR_LRS.PERS_TIME_TRACK_DETL:'NoneType' object has no attribute 'unpersist'
+[2023-07-11T21:29:57.201+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-11T21:29:57.206+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=Oracle_to_Filestore_Concurrent, task_id=execute_task2, execution_date=20230711T212910, start_date=20230711T212911, end_date=20230711T212957
+[2023-07-11T21:29:57.248+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=59, status='terminated', started='21:29:11') (59) terminated with exit code None
+[2023-07-11T21:29:57.248+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=57, status='terminated', exitcode=0, started='21:29:11') (57) terminated with exit code 0

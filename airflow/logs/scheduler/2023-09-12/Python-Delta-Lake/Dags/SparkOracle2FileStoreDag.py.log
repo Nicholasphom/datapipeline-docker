@@ -1,0 +1,36 @@
+[2023-09-12T23:07:53.498+0000] {processor.py:157} INFO - Started process (PID=24) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py
+[2023-09-12T23:07:53.502+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py for tasks to queue
+[2023-09-12T23:07:53.503+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.503+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py
+[2023-09-12T23:07:53.538+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:07:53.533+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py", line 16, in <module>
+    from  SparkModules.SparkPipelines import SparkOracle2FileStore
+  File "/opt/airflow/dags/Python-Delta-Lake/SparkModules/SparkPipelines/SparkOracle2FileStore.py", line 1, in <module>
+    from SparkModules.SparkUtils import ScManager,HdfsFunctions,SystemFunctions
+  File "/opt/airflow/dags/Python-Delta-Lake/SparkModules/SparkUtils/ScManager.py", line 1, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2023-09-12T23:07:53.539+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py
+[2023-09-12T23:07:53.590+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py took 0.094 seconds
+[2023-09-12T23:08:24.168+0000] {processor.py:157} INFO - Started process (PID=38) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py
+[2023-09-12T23:08:24.170+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py for tasks to queue
+[2023-09-12T23:08:24.171+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:08:24.171+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py
+[2023-09-12T23:08:24.196+0000] {logging_mixin.py:149} INFO - [2023-09-12T23:08:24.192+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py", line 16, in <module>
+    from  SparkModules.SparkPipelines import SparkOracle2FileStore
+  File "/opt/airflow/dags/Python-Delta-Lake/SparkModules/SparkPipelines/SparkOracle2FileStore.py", line 1, in <module>
+    from SparkModules.SparkUtils import ScManager,HdfsFunctions,SystemFunctions
+  File "/opt/airflow/dags/Python-Delta-Lake/SparkModules/SparkUtils/ScManager.py", line 1, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2023-09-12T23:08:24.197+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py
+[2023-09-12T23:08:24.210+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py took 0.050 seconds

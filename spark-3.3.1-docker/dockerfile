@@ -1,0 +1,113 @@
+# builder step used to download and configure spark environment
+FROM openjdk:11.0.11-jre-slim-buster as builder
+USER root
+# Add Dependencies for PySpark
+RUN apt-get update \
+        && apt-get install -y nano libaio1 unzip wget software-properties-common ssh net-tools ca-certificates python3 python3-pip python3-numpy python3-matplotlib python3-scipy python3-pandas python3-simpy
+
+RUN update-alternatives --install "/usr/bin/python" "python" "$(which python3)" 1
+
+#COPY requirements.txt /
+#RUN pip3 install --no-cache-dir  -r /requirements.txt 
+
+
+# Fix the value of PYTHONHASHSEED
+# Note: this is needed when you use Python 3.3 or greater
+ENV SPARK_VERSION=3.3.1 \
+HADOOP_VERSION=3 \
+SPARK_HOME=/opt/spark \
+PYTHONHASHSEED=1
+
+
+# # Isntall Oracle Wallet 
+# RUN wget --no-verbose -O oracle_instant_client.zip "https://download.oracle.com/otn_software/linux/instantclient/1919000/instantclient-basic-linux.x64-19.19.0.0.0dbru.zip" \
+# && mkdir -p /opt/oracle \
+# && unzip oracle_instant_client.zip -d /opt/oracle \
+# && rm oracle_instant_client.zip
+
+# # Install MSSql Jar
+# RUN wget --no-verbose -O mssql.zip "https://go.microsoft.com/fwlink/?linkid=2223050" \
+# && unzip mssql.zip -d /opt \
+# && rm mssql.zip
+
+# # Install Sql Plus 
+# RUN wget --no-verbose -O sqlplus.zip "https://download.oracle.com/otn_software/linux/instantclient/1919000/instantclient-sqlplus-linux.x64-19.19.0.0.0dbru.zip" \
+# && unzip sqlplus.zip -d /opt/oracle 
+# # Link Client run to ssqlplus
+# RUN sh -c "echo /opt/oracle/instantclient_19_19 > /etc/ld.so.conf.d/oracle-instantclient.conf"
+# RUN ldconfig
+
+
+# #add path to run sql plus anywhere
+# RUN chmod 777 /opt/oracle/instantclient_19_19/sqlplus
+# ENV PATH="$PATH:/opt/oracle/instantclient_19_19"
+# RUN echo $PATH
+
+# # use orapki anywhere
+# ADD ./oracle_scripts/orapki /opt/oracle/oracle_scripts/orapki
+# RUN chmod 777 /opt/oracle/oracle_scripts/orapki
+# ENV PATH="$PATH:/opt/oracle/oracle_scripts/orapki"
+# RUN echo $PATH
+
+# #Oracle_Home
+
+# #ENV ORACLE_HOME="/opt/oracle/instantclient_19_19"
+# ENV LD_LIBRARY_PATH = "/opt/oracle/instantclient_19_19:$LD_LIBRARY_PATH"
+# ENV ORACLE_HOME="/opt/oracle/instantclient_19_19"
+
+# ENV TNS_ADMIN = "/opt/oracle/instantclient_19_19/network/admin"
+# ENV ORACLE_SID ="SAWSREPO.CALSAWS"
+# #RUN export PATH="$PATH:/opt/mssql-tools18/bin"; echo $PATH
+# RUN echo $PATH
+
+# ## ADD JARS AND CERTS
+# ADD ./oracle_jars /opt/oracle/instantclient_19_19/lib
+# RUN mkdir /opt/oracle/instantclient_19_19/certs
+# ADD ./oracle_certs /opt/oracle/instantclient_19_19/certs
+# ADD ./oracle_files /opt/oracle/instantclient_19_19/network/admin
+# # CREATE WALLET AND ADD CERTS
+# RUN mkdir -p /opt/oracle/instantclient_19_19/wallet
+# RUN cd /opt/oracle/instantclient_19_19/wallet \
+# && /opt/oracle/oracle_scripts/orapki wallet create -wallet nickwallet -auto_login -pwd dashydash123 \
+# && /opt/oracle/oracle_scripts/orapki wallet add -wallet nickwallet -trusted_cert -cert /opt/oracle/instantclient_19_19/certs/usawcwopr100_production_calwin_org.crt -pwd dashydash123 \
+# && /opt/oracle/oracle_scripts/orapki wallet add -wallet nickwallet -trusted_cert -cert /opt/oracle/instantclient_19_19/certs/usawcwopr100_production_calwin_org.ca-bundle -pwd dashydash123 
+# RUN chmod 777 -R /opt/oracle/instantclient_19_19/wallet
+
+# Download and uncompress spark from the apache archive
+RUN wget --no-verbose -O apache-spark.tgz "https://archive.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz" \
+&& mkdir -p /opt/spark \
+&& tar -xf apache-spark.tgz -C /opt/spark --strip-components=1 \
+&& rm apache-spark.tgz
+
+
+# Apache spark environment
+FROM builder as apache-spark
+
+ADD ./config/spark-defaults.conf /opt/spark/conf/
+ADD ./config/fairscheduler.xml /opt/spark/conf/
+ADD ./jars/delta-storage-2.3.0.jar /opt/spark/jars/
+
+
+WORKDIR /opt/spark
+
+ENV SPARK_MASTER_PORT=7077 \
+SPARK_MASTER_WEBUI_PORT=8080 \
+SPARK_LOG_DIR=/opt/spark/logs \
+SPARK_MASTER_LOG=/opt/spark/logs/spark-master.out \
+SPARK_WORKER_LOG=/opt/spark/logs/spark-worker.out \
+SPARK_WORKER_WEBUI_PORT=8080 \
+SPARK_WORKER_PORT=7000 \
+SPARK_MASTER="spark://spark-master:7077" \
+SPARK_WORKLOAD="master"
+
+EXPOSE 8080 7077 6066
+
+RUN mkdir -p $SPARK_LOG_DIR && \
+touch $SPARK_MASTER_LOG && \
+touch $SPARK_WORKER_LOG && \
+ln -sf /dev/stdout $SPARK_MASTER_LOG && \
+ln -sf /dev/stdout $SPARK_WORKER_LOG
+
+COPY start-spark.sh /
+
+CMD ["/bin/bash", "/start-spark.sh"]

@@ -1,0 +1,34 @@
+[2023-05-31T23:16:33.723+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docs_example_dag.tell_me_what_to_do manual__2023-05-31T23:16:32.415712+00:00 [queued]>
+[2023-05-31T23:16:33.727+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docs_example_dag.tell_me_what_to_do manual__2023-05-31T23:16:32.415712+00:00 [queued]>
+[2023-05-31T23:16:33.727+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-05-31T23:16:33.734+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): tell_me_what_to_do> on 2023-05-31 23:16:32.415712+00:00
+[2023-05-31T23:16:33.737+0000] {standard_task_runner.py:57} INFO - Started process 53 to run task
+[2023-05-31T23:16:33.739+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docs_example_dag', 'tell_me_what_to_do', 'manual__2023-05-31T23:16:32.415712+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/Csv2Delta/dags/Csv2Delta_dag.py', '--cfg-path', '/tmp/tmpuffurxhb']
+[2023-05-31T23:16:33.739+0000] {standard_task_runner.py:85} INFO - Job 15: Subtask tell_me_what_to_do
+[2023-05-31T23:16:33.764+0000] {task_command.py:410} INFO - Running <TaskInstance: docs_example_dag.tell_me_what_to_do manual__2023-05-31T23:16:32.415712+00:00 [running]> on host 58054f4efef6
+[2023-05-31T23:16:33.800+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docs_example_dag' AIRFLOW_CTX_TASK_ID='tell_me_what_to_do' AIRFLOW_CTX_EXECUTION_DATE='2023-05-31T23:16:32.415712+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-05-31T23:16:32.415712+00:00'
+[2023-05-31T23:16:33.804+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Csv2Delta/dags/Csv2Delta_dag.py", line 32, in tell_me_what_to_do
+    bash = BashOperator(task_id = "Bash Caller",
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 799, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/helpers.py", line 55, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Bash Caller' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-31T23:16:33.806+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=docs_example_dag, task_id=tell_me_what_to_do, execution_date=20230531T231632, start_date=20230531T231633, end_date=20230531T231633
+[2023-05-31T23:16:33.828+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 15 for task tell_me_what_to_do (The key 'Bash Caller' has to be made of alphanumeric characters, dashes, dots and underscores exclusively; 53)
+[2023-05-31T23:16:33.870+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-05-31T23:16:33.879+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

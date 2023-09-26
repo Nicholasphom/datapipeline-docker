@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./dags/include/Csv2Delta/utils"
+    ]
+}

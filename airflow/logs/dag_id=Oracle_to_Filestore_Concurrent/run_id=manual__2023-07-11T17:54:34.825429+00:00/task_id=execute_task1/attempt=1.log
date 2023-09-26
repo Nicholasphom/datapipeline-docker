@@ -1,0 +1,445 @@
+[2023-07-11T17:54:36.106+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.execute_task1 manual__2023-07-11T17:54:34.825429+00:00 [queued]>
+[2023-07-11T17:54:36.110+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.execute_task1 manual__2023-07-11T17:54:34.825429+00:00 [queued]>
+[2023-07-11T17:54:36.111+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-11T17:54:36.117+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_task1> on 2023-07-11 17:54:34.825429+00:00
+[2023-07-11T17:54:36.121+0000] {standard_task_runner.py:57} INFO - Started process 528 to run task
+[2023-07-11T17:54:36.124+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore_Concurrent', 'execute_task1', 'manual__2023-07-11T17:54:34.825429+00:00', '--job-id', '1011', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmpj5x8no42']
+[2023-07-11T17:54:36.125+0000] {standard_task_runner.py:85} INFO - Job 1011: Subtask execute_task1
+[2023-07-11T17:54:36.151+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore_Concurrent.execute_task1 manual__2023-07-11T17:54:34.825429+00:00 [running]> on host 876817aabcc6
+[2023-07-11T17:54:36.193+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore_Concurrent' AIRFLOW_CTX_TASK_ID='execute_task1' AIRFLOW_CTX_EXECUTION_DATE='2023-07-11T17:54:34.825429+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-11T17:54:34.825429+00:00'
+[2023-07-11T17:54:36.193+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T17:54:36.193+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T17:54:36.193+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-07-11T17:54:36.193+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-07-11T17:54:39.304+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-07-11T17:54:39.304+0000] {logging_mixin.py:149} INFO - Spark Connection check - session found
+[2023-07-11T17:54:39.913+0000] {logging_mixin.py:149} INFO - Attempt to read Msql Table by query: select * from DeltaLake.OracleTablesLog
+        where OracleRows < 1000000 AND OracleRows > 10000 AND OracleSizeInMB < 2500 AND CountyFilter IS NOT NULL and PrimaryKeyColumn !=''
+[2023-07-11T17:54:43.446+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T17:54:43.448+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T17:54:43.448+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T17:54:43.452+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T17:54:43.452+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T17:54:43.453+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T17:54:43.455+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T17:54:43.456+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:248: FutureWarning: Passing unit-less datetime64 dtype to .astype is deprecated and will raise in a future version. Pass 'datetime64[ns]' instead
+  series = series.astype(t, copy=False)
+
+[2023-07-11T17:54:43.467+0000] {SparkOracle2FileStore.py:81} INFO - Skipping log tables and reading tables directly
+[2023-07-11T17:54:43.468+0000] {SparkOracle2FileStore.py:91} INFO - processing 1 out of 26
+[2023-07-11T17:54:43.468+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.FOSTER_FAM_AGNC
+[2023-07-11T17:54:43.468+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T17:54:45.205+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.FOSTER_FAM_AGNC
+[2023-07-11T17:54:45.205+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T17:54:46.398+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T17:54:46.963+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T17:54:46.963+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T17:54:48.271+0000] {SparkOracle2FileStore.py:114} INFO - 34262
+[2023-07-11T17:54:48.271+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T17:54:51.051+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/FOSTER_FAM_AGNC
+[2023-07-11T17:54:51.051+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T17:54:51.051+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T17:54:59.992+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.FOSTER_FAM_AGNC
+[2023-07-11T17:55:00.100+0000] {SparkOracle2FileStore.py:91} INFO - processing 2 out of 26
+[2023-07-11T17:55:00.100+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.EBT_EXPG_EXCPT
+[2023-07-11T17:55:00.100+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T17:55:01.344+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.EBT_EXPG_EXCPT
+[2023-07-11T17:55:01.344+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T17:55:02.572+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T17:55:03.513+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T17:55:03.513+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T17:55:05.087+0000] {SparkOracle2FileStore.py:114} INFO - 316506
+[2023-07-11T17:55:05.087+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T17:55:06.553+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/EBT_EXPG_EXCPT
+[2023-07-11T17:55:06.553+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T17:55:06.553+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T17:55:52.523+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.EBT_EXPG_EXCPT
+[2023-07-11T17:55:52.602+0000] {SparkOracle2FileStore.py:91} INFO - processing 3 out of 26
+[2023-07-11T17:55:52.602+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.ENCL_ESTIMATE
+[2023-07-11T17:55:52.602+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T17:55:53.908+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.ENCL_ESTIMATE
+[2023-07-11T17:55:53.908+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T17:55:55.384+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T17:55:55.883+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T17:55:55.883+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T17:55:57.075+0000] {SparkOracle2FileStore.py:114} INFO - 25979
+[2023-07-11T17:55:57.075+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T17:55:58.197+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/ENCL_ESTIMATE
+[2023-07-11T17:55:58.197+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T17:55:58.197+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T17:56:01.960+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.ENCL_ESTIMATE
+[2023-07-11T17:56:02.030+0000] {SparkOracle2FileStore.py:91} INFO - processing 4 out of 26
+[2023-07-11T17:56:02.031+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.UNIT
+[2023-07-11T17:56:02.031+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T17:56:04.283+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.UNIT
+[2023-07-11T17:56:04.283+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T17:56:05.982+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T17:56:06.615+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T17:56:06.615+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T17:56:08.095+0000] {SparkOracle2FileStore.py:114} INFO - 42879
+[2023-07-11T17:56:08.095+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T17:56:09.505+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/UNIT
+[2023-07-11T17:56:09.505+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T17:56:09.505+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T17:56:29.207+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.UNIT
+[2023-07-11T17:56:29.271+0000] {SparkOracle2FileStore.py:190} INFO - Tables Thresholds reached, restarting spark context
+[2023-07-11T17:56:29.271+0000] {logging_mixin.py:149} INFO - Stopping Spark Context
+[2023-07-11T17:56:29.773+0000] {logging_mixin.py:149} INFO - Restarting Spark Context
+[2023-07-11T17:56:29.773+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T17:56:29.773+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-07-11T17:56:29.773+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-07-11T17:56:29.860+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-07-11T17:56:29.860+0000] {SparkOracle2FileStore.py:91} INFO - processing 5 out of 26
+[2023-07-11T17:56:29.860+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IEVS_SAVE_EXCEPT
+[2023-07-11T17:56:29.860+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:00:05.705+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IEVS_SAVE_EXCEPT
+[2023-07-11T18:00:05.705+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:00:07.633+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:00:08.160+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:00:08.160+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:00:09.876+0000] {SparkOracle2FileStore.py:114} INFO - 397776
+[2023-07-11T18:00:09.876+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:00:11.286+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/IEVS_SAVE_EXCEPT
+[2023-07-11T18:00:11.286+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:00:11.286+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:01:36.256+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.IEVS_SAVE_EXCEPT
+[2023-07-11T18:01:36.329+0000] {SparkOracle2FileStore.py:91} INFO - processing 6 out of 26
+[2023-07-11T18:01:36.329+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.RULES_ADMIN
+[2023-07-11T18:01:36.329+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:01:38.617+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.RULES_ADMIN
+[2023-07-11T18:01:38.617+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:01:40.062+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:01:40.670+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:01:40.670+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:01:41.975+0000] {SparkOracle2FileStore.py:114} INFO - 25885
+[2023-07-11T18:01:41.975+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:01:43.409+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/RULES_ADMIN
+[2023-07-11T18:01:43.409+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:01:43.409+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:01:46.257+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.RULES_ADMIN
+[2023-07-11T18:01:46.325+0000] {SparkOracle2FileStore.py:91} INFO - processing 7 out of 26
+[2023-07-11T18:01:46.325+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WTW_24_MONTH_SIGN_DATE
+[2023-07-11T18:01:46.325+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:01:47.557+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WTW_24_MONTH_SIGN_DATE
+[2023-07-11T18:01:47.557+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:01:48.708+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:01:49.262+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:01:49.262+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:01:50.996+0000] {SparkOracle2FileStore.py:114} INFO - 830945
+[2023-07-11T18:01:50.996+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:01:52.423+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/WTW_24_MONTH_SIGN_DATE
+[2023-07-11T18:01:52.423+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:01:52.423+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:04:46.549+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.WTW_24_MONTH_SIGN_DATE
+[2023-07-11T18:04:46.618+0000] {SparkOracle2FileStore.py:91} INFO - processing 8 out of 26
+[2023-07-11T18:04:46.618+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column HST_ID on table PR_LRS.COUNTY_PARAMTR_ADMIN_HST
+[2023-07-11T18:04:46.619+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:04:48.297+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column HST_ID on table PR_LRS.COUNTY_PARAMTR_ADMIN_HST
+[2023-07-11T18:04:48.297+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:04:51.715+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:04:53.673+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:04:53.673+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:04:56.904+0000] {SparkOracle2FileStore.py:114} INFO - 48818
+[2023-07-11T18:04:56.905+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:04:58.850+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/COUNTY_PARAMTR_ADMIN_HST
+[2023-07-11T18:04:58.850+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:04:58.850+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:05:08.779+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.COUNTY_PARAMTR_ADMIN_HST
+[2023-07-11T18:05:08.859+0000] {SparkOracle2FileStore.py:91} INFO - processing 9 out of 26
+[2023-07-11T18:05:08.859+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.C4Y_PREG
+[2023-07-11T18:05:08.859+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:05:10.844+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.C4Y_PREG
+[2023-07-11T18:05:10.844+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:05:12.022+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:05:12.570+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:05:12.570+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:05:13.786+0000] {SparkOracle2FileStore.py:114} INFO - 87659
+[2023-07-11T18:05:13.786+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:05:15.089+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/C4Y_PREG
+[2023-07-11T18:05:15.089+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:05:15.089+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:05:22.553+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.C4Y_PREG
+[2023-07-11T18:05:22.616+0000] {SparkOracle2FileStore.py:190} INFO - Tables Thresholds reached, restarting spark context
+[2023-07-11T18:05:22.616+0000] {logging_mixin.py:149} INFO - Stopping Spark Context
+[2023-07-11T18:05:22.929+0000] {logging_mixin.py:149} INFO - Restarting Spark Context
+[2023-07-11T18:05:22.929+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T18:05:22.929+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-07-11T18:05:22.929+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-07-11T18:05:23.009+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-07-11T18:05:23.010+0000] {SparkOracle2FileStore.py:91} INFO - processing 10 out of 26
+[2023-07-11T18:05:23.010+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IEVS_PRISON_MATCH
+[2023-07-11T18:05:23.010+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:06:19.079+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IEVS_PRISON_MATCH
+[2023-07-11T18:06:19.079+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:06:20.241+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:06:20.776+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:06:20.777+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:06:22.406+0000] {SparkOracle2FileStore.py:114} INFO - 432367
+[2023-07-11T18:06:22.406+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:06:23.707+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/IEVS_PRISON_MATCH
+[2023-07-11T18:06:23.707+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:06:23.707+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:08:23.375+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.IEVS_PRISON_MATCH
+[2023-07-11T18:08:23.443+0000] {SparkOracle2FileStore.py:91} INFO - processing 11 out of 26
+[2023-07-11T18:08:23.443+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.ORG_ACCT
+[2023-07-11T18:08:23.443+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:08:24.713+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.ORG_ACCT
+[2023-07-11T18:08:24.713+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:08:25.927+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:08:26.511+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:08:26.512+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:08:28.016+0000] {SparkOracle2FileStore.py:114} INFO - 30003
+[2023-07-11T18:08:28.016+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:08:29.437+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/ORG_ACCT
+[2023-07-11T18:08:29.437+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:08:29.437+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:08:35.697+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.ORG_ACCT
+[2023-07-11T18:08:35.762+0000] {SparkOracle2FileStore.py:91} INFO - processing 12 out of 26
+[2023-07-11T18:08:35.763+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.TRAIN_PGM
+[2023-07-11T18:08:35.763+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:08:37.010+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.TRAIN_PGM
+[2023-07-11T18:08:37.010+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:08:38.741+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:08:39.631+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:08:39.631+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:08:40.933+0000] {SparkOracle2FileStore.py:114} INFO - 18600
+[2023-07-11T18:08:40.933+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:08:42.270+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/TRAIN_PGM
+[2023-07-11T18:08:42.270+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:08:42.270+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:08:47.444+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.TRAIN_PGM
+[2023-07-11T18:08:47.518+0000] {SparkOracle2FileStore.py:91} INFO - processing 13 out of 26
+[2023-07-11T18:08:47.518+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IFD_SSI
+[2023-07-11T18:08:47.518+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:08:48.617+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IFD_SSI
+[2023-07-11T18:08:48.617+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:08:49.764+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:08:50.323+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:08:50.324+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:08:52.119+0000] {SparkOracle2FileStore.py:114} INFO - 775890
+[2023-07-11T18:08:52.120+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:08:53.553+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/IFD_SSI
+[2023-07-11T18:08:53.553+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:08:53.553+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:11:08.651+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.IFD_SSI
+[2023-07-11T18:11:08.715+0000] {SparkOracle2FileStore.py:91} INFO - processing 14 out of 26
+[2023-07-11T18:11:08.715+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.C4Y_PERS_NON_COMPL
+[2023-07-11T18:11:08.715+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:11:09.938+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.C4Y_PERS_NON_COMPL
+[2023-07-11T18:11:09.938+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:11:11.104+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:11:11.639+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:11:11.640+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:11:14.109+0000] {SparkOracle2FileStore.py:114} INFO - 2477286
+[2023-07-11T18:11:14.109+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:11:16.353+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/C4Y_PERS_NON_COMPL
+[2023-07-11T18:11:16.353+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:11:16.353+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:15:54.447+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.C4Y_PERS_NON_COMPL
+[2023-07-11T18:15:54.514+0000] {SparkOracle2FileStore.py:190} INFO - Tables Thresholds reached, restarting spark context
+[2023-07-11T18:15:54.514+0000] {logging_mixin.py:149} INFO - Stopping Spark Context
+[2023-07-11T18:15:54.767+0000] {logging_mixin.py:149} INFO - Restarting Spark Context
+[2023-07-11T18:15:54.768+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T18:15:54.768+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-07-11T18:15:54.768+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-07-11T18:15:54.836+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-07-11T18:15:54.837+0000] {SparkOracle2FileStore.py:91} INFO - processing 15 out of 26
+[2023-07-11T18:15:54.837+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.POS
+[2023-07-11T18:15:54.837+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:15:57.652+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.POS
+[2023-07-11T18:15:57.652+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:15:58.742+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:15:59.307+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:15:59.307+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:16:00.616+0000] {SparkOracle2FileStore.py:114} INFO - 346615
+[2023-07-11T18:16:00.616+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:16:01.829+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/POS
+[2023-07-11T18:16:01.829+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:16:01.829+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:16:17.310+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.POS
+[2023-07-11T18:16:17.378+0000] {SparkOracle2FileStore.py:91} INFO - processing 16 out of 26
+[2023-07-11T18:16:17.379+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.ADH_SUMM
+[2023-07-11T18:16:17.379+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:16:18.470+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.ADH_SUMM
+[2023-07-11T18:16:18.470+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:16:19.653+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:16:20.283+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:16:20.283+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:16:21.439+0000] {SparkOracle2FileStore.py:114} INFO - 16589
+[2023-07-11T18:16:21.440+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:16:22.618+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/ADH_SUMM
+[2023-07-11T18:16:22.618+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:16:22.618+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:16:26.098+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.ADH_SUMM
+[2023-07-11T18:16:26.160+0000] {SparkOracle2FileStore.py:91} INFO - processing 17 out of 26
+[2023-07-11T18:16:26.160+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WDTIP_PGM_PARTICPTN
+[2023-07-11T18:16:26.160+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:16:27.295+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WDTIP_PGM_PARTICPTN
+[2023-07-11T18:16:27.295+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:16:29.017+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:16:29.574+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:16:29.574+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:16:30.979+0000] {SparkOracle2FileStore.py:114} INFO - 227042
+[2023-07-11T18:16:30.980+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:16:32.151+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/WDTIP_PGM_PARTICPTN
+[2023-07-11T18:16:32.151+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:16:32.151+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:16:44.726+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.WDTIP_PGM_PARTICPTN
+[2023-07-11T18:16:44.787+0000] {SparkOracle2FileStore.py:91} INFO - processing 18 out of 26
+[2023-07-11T18:16:44.787+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.HEAR_SUMM
+[2023-07-11T18:16:44.787+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:16:46.147+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.HEAR_SUMM
+[2023-07-11T18:16:46.147+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:16:47.352+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:16:47.877+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:16:47.877+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:16:50.197+0000] {SparkOracle2FileStore.py:114} INFO - 903275
+[2023-07-11T18:16:50.197+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:16:51.825+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/HEAR_SUMM
+[2023-07-11T18:16:51.825+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:16:51.825+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:17:56.488+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.HEAR_SUMM
+[2023-07-11T18:17:56.558+0000] {SparkOracle2FileStore.py:91} INFO - processing 19 out of 26
+[2023-07-11T18:17:56.558+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.WDTIP_ALERT
+[2023-07-11T18:17:56.558+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:17:58.045+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.WDTIP_ALERT
+[2023-07-11T18:17:58.045+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:17:59.518+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:18:00.110+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:18:00.110+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:18:02.204+0000] {SparkOracle2FileStore.py:114} INFO - 713240
+[2023-07-11T18:18:02.204+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:18:03.834+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/WDTIP_ALERT
+[2023-07-11T18:18:03.834+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:18:03.834+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:18:59.556+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.WDTIP_ALERT
+[2023-07-11T18:18:59.628+0000] {SparkOracle2FileStore.py:190} INFO - Tables Thresholds reached, restarting spark context
+[2023-07-11T18:18:59.628+0000] {logging_mixin.py:149} INFO - Stopping Spark Context
+[2023-07-11T18:19:00.140+0000] {logging_mixin.py:149} INFO - Restarting Spark Context
+[2023-07-11T18:19:00.140+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T18:19:00.140+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-07-11T18:19:00.140+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-07-11T18:19:00.206+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-07-11T18:19:00.206+0000] {SparkOracle2FileStore.py:91} INFO - processing 20 out of 26
+[2023-07-11T18:19:00.206+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IHSS_REFRL
+[2023-07-11T18:19:00.206+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:19:03.025+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IHSS_REFRL
+[2023-07-11T18:19:03.025+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:19:04.375+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:19:05.193+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:19:05.193+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:19:06.921+0000] {SparkOracle2FileStore.py:114} INFO - 994689
+[2023-07-11T18:19:06.922+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:19:08.316+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/IHSS_REFRL
+[2023-07-11T18:19:08.316+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:19:08.316+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:20:14.726+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.IHSS_REFRL
+[2023-07-11T18:20:14.794+0000] {SparkOracle2FileStore.py:91} INFO - processing 21 out of 26
+[2023-07-11T18:20:14.794+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.SFIS_COUNTY_INFO
+[2023-07-11T18:20:14.794+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:20:16.241+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.SFIS_COUNTY_INFO
+[2023-07-11T18:20:16.241+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:20:17.718+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:20:18.329+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:20:18.329+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:20:21.792+0000] {SparkOracle2FileStore.py:114} INFO - 375901
+[2023-07-11T18:20:21.792+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:20:24.913+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/SFIS_COUNTY_INFO
+[2023-07-11T18:20:24.914+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:20:24.914+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:20:47.104+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.SFIS_COUNTY_INFO
+[2023-07-11T18:20:47.164+0000] {SparkOracle2FileStore.py:91} INFO - processing 22 out of 26
+[2023-07-11T18:20:47.164+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.STAFF
+[2023-07-11T18:20:47.164+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:20:48.350+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.STAFF
+[2023-07-11T18:20:48.351+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:20:49.475+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:20:50.367+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:20:50.367+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:20:51.861+0000] {SparkOracle2FileStore.py:114} INFO - 345367
+[2023-07-11T18:20:51.862+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:20:53.088+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/STAFF
+[2023-07-11T18:20:53.088+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:20:53.088+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:21:22.517+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.STAFF
+[2023-07-11T18:21:22.580+0000] {SparkOracle2FileStore.py:91} INFO - processing 23 out of 26
+[2023-07-11T18:21:22.580+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.MEDS_ALERT_CONFIG
+[2023-07-11T18:21:22.581+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:21:25.051+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.MEDS_ALERT_CONFIG
+[2023-07-11T18:21:25.051+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:21:26.534+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:21:27.334+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:21:27.334+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:21:28.818+0000] {SparkOracle2FileStore.py:114} INFO - 44544
+[2023-07-11T18:21:28.818+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:21:29.958+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/MEDS_ALERT_CONFIG
+[2023-07-11T18:21:29.958+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:21:29.958+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:21:33.318+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.MEDS_ALERT_CONFIG
+[2023-07-11T18:21:33.386+0000] {SparkOracle2FileStore.py:91} INFO - processing 24 out of 26
+[2023-07-11T18:21:33.387+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.BATCH_JOB
+[2023-07-11T18:21:33.387+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:21:34.575+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.BATCH_JOB
+[2023-07-11T18:21:34.575+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:21:35.751+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:21:36.315+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:21:36.315+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:21:37.573+0000] {SparkOracle2FileStore.py:114} INFO - 35062
+[2023-07-11T18:21:37.573+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:21:38.760+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/BATCH_JOB
+[2023-07-11T18:21:38.760+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:21:38.760+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:21:42.992+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.BATCH_JOB
+[2023-07-11T18:21:43.059+0000] {SparkOracle2FileStore.py:190} INFO - Tables Thresholds reached, restarting spark context
+[2023-07-11T18:21:43.059+0000] {logging_mixin.py:149} INFO - Stopping Spark Context
+[2023-07-11T18:21:43.416+0000] {logging_mixin.py:149} INFO - Restarting Spark Context
+[2023-07-11T18:21:43.416+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-11T18:21:43.416+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-07-11T18:21:43.416+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-07-11T18:21:43.483+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-07-11T18:21:43.484+0000] {SparkOracle2FileStore.py:91} INFO - processing 25 out of 26
+[2023-07-11T18:21:43.484+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column ID on table PR_LRS.IHSS_CASE
+[2023-07-11T18:21:43.484+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:21:46.319+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column ID on table PR_LRS.IHSS_CASE
+[2023-07-11T18:21:46.319+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:21:47.854+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:21:48.399+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:21:48.399+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:21:49.849+0000] {SparkOracle2FileStore.py:114} INFO - 864326
+[2023-07-11T18:21:49.849+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:21:51.412+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/IHSS_CASE
+[2023-07-11T18:21:51.412+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:21:51.412+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:22:25.268+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.IHSS_CASE
+[2023-07-11T18:22:25.331+0000] {SparkOracle2FileStore.py:91} INFO - processing 26 out of 26
+[2023-07-11T18:22:25.331+0000] {logging_mixin.py:149} INFO - Attempting to get lowest value by column HST_ID on table PR_LRS.RULES_ADMIN_HST
+[2023-07-11T18:22:25.331+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:22:26.404+0000] {logging_mixin.py:149} INFO - Attempting to get max value by column HST_ID on table PR_LRS.RULES_ADMIN_HST
+[2023-07-11T18:22:26.404+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table by query...
+[2023-07-11T18:22:27.540+0000] {logging_mixin.py:149} INFO - Attempting to read oracle table...
+[2023-07-11T18:22:28.144+0000] {SparkOracle2FileStore.py:111} INFO - Filter Processor Disabled
+[2023-07-11T18:22:28.144+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:22:29.325+0000] {SparkOracle2FileStore.py:114} INFO - 54080
+[2023-07-11T18:22:29.326+0000] {logging_mixin.py:149} INFO - Attempting to read oracle rowcount by query...
+[2023-07-11T18:22:30.532+0000] {logging_mixin.py:149} INFO - Checking if directory exists:/home/nicholas/dev/output/RULES_ADMIN_HST
+[2023-07-11T18:22:30.532+0000] {logging_mixin.py:149} INFO - Returning False
+[2023-07-11T18:22:30.532+0000] {SparkOracle2FileStore.py:176} INFO - Should not go in here if table dir exists
+[2023-07-11T18:22:35.050+0000] {SparkOracle2FileStore.py:181} INFO - Table Processing complete for PR_LRS.RULES_ADMIN_HST
+[2023-07-11T18:22:35.112+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-11T18:22:35.117+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=Oracle_to_Filestore_Concurrent, task_id=execute_task1, execution_date=20230711T175434, start_date=20230711T175436, end_date=20230711T182235
+[2023-07-11T18:22:35.169+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-11T18:22:35.178+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

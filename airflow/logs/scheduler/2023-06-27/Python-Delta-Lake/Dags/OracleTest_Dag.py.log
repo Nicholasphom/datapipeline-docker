@@ -1,0 +1,315 @@
+[2023-06-27T18:43:11.687+0000] {processor.py:157} INFO - Started process (PID=36) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:43:11.688+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:43:11.688+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:43:11.688+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:43:12.201+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:43:12.229+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:43:12.229+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:43:12.239+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:43:12.239+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T17:00:00+00:00, run_after=2023-06-27T18:00:00+00:00
+[2023-06-27T18:43:12.250+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.564 seconds
+[2023-06-27T18:43:42.484+0000] {processor.py:157} INFO - Started process (PID=74) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:43:42.484+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:43:42.484+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:43:42.484+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:43:42.813+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:43:42.826+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:43:42.825+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:43:42.837+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:43:42.837+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:43:42.847+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.365 seconds
+[2023-06-27T18:44:13.105+0000] {processor.py:157} INFO - Started process (PID=108) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:44:13.105+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:44:13.105+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:44:13.105+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:44:13.410+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:44:13.423+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:44:13.422+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:44:13.433+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:44:13.433+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:44:13.444+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.341 seconds
+[2023-06-27T18:44:43.587+0000] {processor.py:157} INFO - Started process (PID=142) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:44:43.588+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:44:43.588+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:44:43.588+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:44:43.878+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:44:43.891+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:44:43.891+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:44:43.901+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:44:43.901+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:44:43.915+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.330 seconds
+[2023-06-27T18:45:14.149+0000] {processor.py:157} INFO - Started process (PID=176) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:45:14.150+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:45:14.150+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:45:14.150+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:45:14.427+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:45:14.439+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:45:14.439+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:45:14.450+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:45:14.449+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:45:14.459+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.313 seconds
+[2023-06-27T18:45:44.585+0000] {processor.py:157} INFO - Started process (PID=210) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:45:44.586+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:45:44.587+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:45:44.587+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:45:44.889+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:45:44.901+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:45:44.901+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:45:44.911+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:45:44.911+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:45:44.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.337 seconds
+[2023-06-27T18:46:15.110+0000] {processor.py:157} INFO - Started process (PID=244) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:46:15.111+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:46:15.111+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:46:15.111+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:46:15.410+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:46:15.423+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:46:15.423+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:46:15.435+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:46:15.435+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:46:15.447+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.339 seconds
+[2023-06-27T18:46:45.591+0000] {processor.py:157} INFO - Started process (PID=278) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:46:45.596+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:46:45.596+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:46:45.596+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:46:45.889+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:46:45.902+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:46:45.902+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:46:45.914+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:46:45.914+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:46:45.923+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.334 seconds
+[2023-06-27T18:47:16.116+0000] {processor.py:157} INFO - Started process (PID=312) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:47:16.121+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:47:16.122+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:47:16.122+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:47:16.419+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:47:16.433+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:47:16.433+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:47:16.444+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:47:16.444+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:47:16.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.340 seconds
+[2023-06-27T18:47:46.617+0000] {processor.py:157} INFO - Started process (PID=346) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:47:46.622+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:47:46.622+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:47:46.622+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:47:46.915+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:47:46.928+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:47:46.927+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:47:46.938+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:47:46.938+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:47:46.951+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.336 seconds
+[2023-06-27T18:48:17.226+0000] {processor.py:157} INFO - Started process (PID=381) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:48:17.230+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:48:17.231+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:48:17.230+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:48:17.519+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:48:17.531+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:48:17.531+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:48:17.541+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:48:17.541+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:48:17.551+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.327 seconds
+[2023-06-27T18:48:47.696+0000] {processor.py:157} INFO - Started process (PID=414) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:48:47.697+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:48:47.698+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:48:47.698+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:48:47.970+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:48:47.981+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:48:47.981+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:48:47.992+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:48:47.992+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:48:48.002+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.308 seconds
+[2023-06-27T18:49:18.231+0000] {processor.py:157} INFO - Started process (PID=448) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:49:18.235+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:49:18.235+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:49:18.235+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:49:18.534+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:49:18.546+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:49:18.546+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:49:18.557+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:49:18.556+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:49:18.565+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.337 seconds
+[2023-06-27T18:49:48.701+0000] {processor.py:157} INFO - Started process (PID=482) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:49:48.705+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:49:48.706+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:49:48.706+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:49:48.996+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:49:49.010+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:49:49.009+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:49:49.019+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:49:49.019+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:49:49.028+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.329 seconds
+[2023-06-27T18:50:19.246+0000] {processor.py:157} INFO - Started process (PID=516) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:50:19.250+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:50:19.251+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:50:19.251+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:50:19.528+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:50:19.540+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:50:19.540+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:50:19.550+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:50:19.550+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:50:19.564+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.320 seconds
+[2023-06-27T18:50:49.714+0000] {processor.py:157} INFO - Started process (PID=550) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:50:49.721+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:50:49.721+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:50:49.721+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:50:50.018+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:50:50.030+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:50:50.030+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:50:50.040+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:50:50.040+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:50:50.049+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.337 seconds
+[2023-06-27T18:51:20.221+0000] {processor.py:157} INFO - Started process (PID=584) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:51:20.222+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:51:20.223+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:51:20.223+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:51:20.529+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:51:20.540+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:51:20.540+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:51:20.550+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:51:20.550+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:51:20.560+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.341 seconds
+[2023-06-27T18:51:50.663+0000] {processor.py:157} INFO - Started process (PID=618) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:51:50.670+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:51:50.670+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:51:50.670+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:51:50.984+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:51:50.996+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:51:50.996+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:51:51.007+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:51:51.007+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:51:51.015+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.355 seconds
+[2023-06-27T18:52:21.182+0000] {processor.py:157} INFO - Started process (PID=652) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:52:21.187+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:52:21.187+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:52:21.187+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:52:21.475+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:52:21.486+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:52:21.486+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:52:21.497+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:52:21.497+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:52:21.506+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.325 seconds
+[2023-06-27T18:52:51.684+0000] {processor.py:157} INFO - Started process (PID=686) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:52:51.691+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:52:51.691+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:52:51.691+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:52:51.956+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:52:51.969+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:52:51.969+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:52:51.980+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:52:51.980+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:52:51.990+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.308 seconds
+[2023-06-27T18:53:22.267+0000] {processor.py:157} INFO - Started process (PID=720) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:53:22.268+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:53:22.269+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:53:22.269+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:53:22.547+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:53:22.559+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:53:22.559+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:53:22.569+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:53:22.569+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:53:22.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.313 seconds
+[2023-06-27T18:53:52.725+0000] {processor.py:157} INFO - Started process (PID=754) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:53:52.726+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:53:52.726+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:53:52.726+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:53:53.007+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:53:53.020+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:53:53.020+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:53:53.030+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:53:53.030+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:53:53.040+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.317 seconds
+[2023-06-27T18:54:23.297+0000] {processor.py:157} INFO - Started process (PID=789) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:54:23.297+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:54:23.298+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:54:23.298+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:54:23.587+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:54:23.599+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:54:23.599+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:54:23.609+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:54:23.609+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:54:23.619+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.324 seconds
+[2023-06-27T18:54:53.707+0000] {processor.py:157} INFO - Started process (PID=822) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:54:53.712+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:54:53.712+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:54:53.712+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:54:53.999+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:54:54.012+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:54:54.011+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:54:54.022+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:54:54.022+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:54:54.031+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.326 seconds
+[2023-06-27T18:55:24.223+0000] {processor.py:157} INFO - Started process (PID=856) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:55:24.224+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:55:24.225+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:55:24.224+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:55:24.528+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:55:24.540+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:55:24.540+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:55:24.551+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:55:24.551+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:55:24.560+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.349 seconds
+[2023-06-27T18:55:54.659+0000] {processor.py:157} INFO - Started process (PID=890) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:55:54.664+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:55:54.664+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:55:54.664+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:55:54.968+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:55:54.980+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:55:54.980+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:55:54.990+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:55:54.990+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:55:54.999+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.341 seconds
+[2023-06-27T18:56:25.137+0000] {processor.py:157} INFO - Started process (PID=924) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:56:25.138+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:56:25.139+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:56:25.138+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:56:25.451+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:56:25.463+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:56:25.463+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:56:25.472+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:56:25.472+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:56:25.481+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.350 seconds
+[2023-06-27T18:56:55.579+0000] {processor.py:157} INFO - Started process (PID=958) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:56:55.583+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:56:55.583+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:56:55.583+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:56:55.883+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:56:55.895+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:56:55.895+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:56:55.905+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:56:55.905+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:56:55.914+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.337 seconds
+[2023-06-27T18:57:26.089+0000] {processor.py:157} INFO - Started process (PID=993) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:57:26.090+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:57:26.090+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:57:26.090+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:57:26.379+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:57:26.392+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:57:26.391+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:57:26.402+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:57:26.402+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:57:26.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.324 seconds
+[2023-06-27T18:57:56.556+0000] {processor.py:157} INFO - Started process (PID=1027) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:57:56.557+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:57:56.557+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:57:56.557+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:57:56.863+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:57:56.875+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:57:56.875+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:57:56.885+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:57:56.885+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:57:56.894+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.340 seconds
+[2023-06-27T18:58:27.012+0000] {processor.py:157} INFO - Started process (PID=1060) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:58:27.013+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:58:27.014+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:58:27.013+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:58:27.298+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:58:27.310+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:58:27.310+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:58:27.321+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:58:27.321+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:58:27.330+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.323 seconds
+[2023-06-27T18:58:57.543+0000] {processor.py:157} INFO - Started process (PID=1094) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:58:57.547+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:58:57.548+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:58:57.548+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:58:57.830+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:58:57.842+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:58:57.842+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:58:57.852+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:58:57.852+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:58:57.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.324 seconds
+[2023-06-27T18:59:28.062+0000] {processor.py:157} INFO - Started process (PID=1128) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:59:28.063+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:59:28.064+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:59:28.064+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:59:28.374+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:59:28.386+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:59:28.386+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:59:28.396+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:59:28.396+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:59:28.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.345 seconds
+[2023-06-27T18:59:58.590+0000] {processor.py:157} INFO - Started process (PID=1162) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:59:58.592+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T18:59:58.592+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:59:58.592+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:59:58.876+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T18:59:58.888+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:59:58.888+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T18:59:58.898+0000] {logging_mixin.py:149} INFO - [2023-06-27T18:59:58.898+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T18:00:00+00:00, run_after=2023-06-27T19:00:00+00:00
+[2023-06-27T18:59:58.906+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.324 seconds
+[2023-06-27T19:00:29.085+0000] {processor.py:157} INFO - Started process (PID=1200) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:00:29.086+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:00:29.086+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:00:29.086+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:00:29.369+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:00:29.383+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:00:29.383+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:00:29.395+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:00:29.395+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:00:29.409+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.326 seconds
+[2023-06-27T19:00:59.609+0000] {processor.py:157} INFO - Started process (PID=1234) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:00:59.611+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:00:59.611+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:00:59.611+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:00:59.924+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:00:59.936+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:00:59.936+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:00:59.947+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:00:59.947+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:00:59.955+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.349 seconds
+[2023-06-27T19:01:30.122+0000] {processor.py:157} INFO - Started process (PID=1268) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:01:30.126+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:01:30.127+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:01:30.127+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:01:30.404+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:01:30.416+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:01:30.416+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:01:30.426+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:01:30.426+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:01:30.435+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.315 seconds
+[2023-06-27T19:02:00.568+0000] {processor.py:157} INFO - Started process (PID=1303) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:02:00.571+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:02:00.571+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:02:00.571+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:02:00.874+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:02:00.886+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:02:00.886+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:02:00.896+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:02:00.896+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:02:00.904+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.338 seconds
+[2023-06-27T19:02:31.091+0000] {processor.py:157} INFO - Started process (PID=1337) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:02:31.097+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:02:31.098+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:02:31.098+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:02:31.386+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:02:31.397+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:02:31.397+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:02:31.407+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:02:31.407+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:02:31.416+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.328 seconds
+[2023-06-27T19:03:01.596+0000] {processor.py:157} INFO - Started process (PID=1371) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:03:01.596+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:03:01.596+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:03:01.596+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:03:01.918+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:03:01.931+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:03:01.931+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:03:01.942+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:03:01.942+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:03:01.950+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.357 seconds
+[2023-06-27T19:03:32.159+0000] {processor.py:157} INFO - Started process (PID=1405) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:03:32.160+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:03:32.160+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:03:32.160+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:03:32.443+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:03:32.456+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:03:32.456+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:03:32.467+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:03:32.467+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:03:32.477+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.319 seconds
+[2023-06-27T19:04:02.677+0000] {processor.py:157} INFO - Started process (PID=1439) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:04:02.679+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:04:02.679+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:04:02.679+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:04:02.986+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:04:02.998+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:04:02.998+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:04:03.009+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:04:03.009+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:04:03.017+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.343 seconds
+[2023-06-27T19:04:33.168+0000] {processor.py:157} INFO - Started process (PID=1473) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:04:33.175+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:04:33.175+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:04:33.175+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:04:33.480+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:04:33.493+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:04:33.493+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:04:33.503+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:04:33.503+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:04:33.512+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.347 seconds
+[2023-06-27T19:05:03.602+0000] {processor.py:157} INFO - Started process (PID=1507) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:05:03.603+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:05:03.603+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:05:03.603+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:05:03.910+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:05:03.923+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:05:03.922+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:05:03.933+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:05:03.933+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:05:03.942+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.343 seconds
+[2023-06-27T19:05:34.065+0000] {processor.py:157} INFO - Started process (PID=1541) to work on /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:05:34.070+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py for tasks to queue
+[2023-06-27T19:05:34.070+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:05:34.070+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:05:34.346+0000] {processor.py:836} INFO - DAG(s) dict_keys(['oracle_connection_test_dag']) retrieved from /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py
+[2023-06-27T19:05:34.358+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:05:34.358+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-27T19:05:34.368+0000] {logging_mixin.py:149} INFO - [2023-06-27T19:05:34.368+0000] {dag.py:3486} INFO - Setting next_dagrun for oracle_connection_test_dag to 2023-06-27T19:00:00+00:00, run_after=2023-06-27T20:00:00+00:00
+[2023-06-27T19:05:34.377+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Python-Delta-Lake/Dags/OracleTest_Dag.py took 0.314 seconds

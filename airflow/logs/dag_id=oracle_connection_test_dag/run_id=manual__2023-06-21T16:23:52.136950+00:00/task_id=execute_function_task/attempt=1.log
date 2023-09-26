@@ -1,0 +1,20 @@
+[2023-06-21T16:23:52.976+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: oracle_connection_test_dag.execute_function_task manual__2023-06-21T16:23:52.136950+00:00 [queued]>
+[2023-06-21T16:23:52.980+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: oracle_connection_test_dag.execute_function_task manual__2023-06-21T16:23:52.136950+00:00 [queued]>
+[2023-06-21T16:23:52.980+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-21T16:23:52.987+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): execute_function_task> on 2023-06-21 16:23:52.136950+00:00
+[2023-06-21T16:23:52.990+0000] {standard_task_runner.py:57} INFO - Started process 14058 to run task
+[2023-06-21T16:23:52.992+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'oracle_connection_test_dag', 'execute_function_task', 'manual__2023-06-21T16:23:52.136950+00:00', '--job-id', '458', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/OracleTest_Dag.py', '--cfg-path', '/tmp/tmpslipj52x']
+[2023-06-21T16:23:52.994+0000] {standard_task_runner.py:85} INFO - Job 458: Subtask execute_function_task
+[2023-06-21T16:23:53.018+0000] {task_command.py:410} INFO - Running <TaskInstance: oracle_connection_test_dag.execute_function_task manual__2023-06-21T16:23:52.136950+00:00 [running]> on host 68331b7f6fd1
+[2023-06-21T16:23:53.057+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='oracle_connection_test_dag' AIRFLOW_CTX_TASK_ID='execute_function_task' AIRFLOW_CTX_EXECUTION_DATE='2023-06-21T16:23:52.136950+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-21T16:23:52.136950+00:00'
+[2023-06-21T16:23:53.058+0000] {logging_mixin.py:149} INFO - Creating Oracle Testing Class
+[2023-06-21T16:23:53.058+0000] {logging_mixin.py:149} INFO - Attempting to connect to oracle
+[2023-06-21T16:23:53.058+0000] {logging_mixin.py:149} INFO - Current User: ***
+[2023-06-21T16:23:53.504+0000] {warnings.py:109} WARNING - /opt/***/dags/Python-Delta-Lake/OracleTest/OracleDbTest.py:20: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df_ora = pd.read_sql(query, con=oracle_connection)
+
+[2023-06-21T16:23:56.463+0000] {logging_mixin.py:149} INFO - (1, 1)
+[2023-06-21T16:23:56.492+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-21T16:23:56.594+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=oracle_connection_test_dag, task_id=execute_function_task, execution_date=20230621T162352, start_date=20230621T162352, end_date=20230621T162356
+[2023-06-21T16:23:56.616+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-21T16:23:56.625+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,55 @@
+[2023-07-12T00:04:23.759+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.process_top_list manual__2023-07-12T00:04:22.216709+00:00 [queued]>
+[2023-07-12T00:04:23.763+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Oracle_to_Filestore_Concurrent.process_top_list manual__2023-07-12T00:04:22.216709+00:00 [queued]>
+[2023-07-12T00:04:23.763+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-12T00:04:23.770+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): process_top_list> on 2023-07-12 00:04:22.216709+00:00
+[2023-07-12T00:04:23.774+0000] {standard_task_runner.py:57} INFO - Started process 652 to run task
+[2023-07-12T00:04:23.776+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Oracle_to_Filestore_Concurrent', 'process_top_list', 'manual__2023-07-12T00:04:22.216709+00:00', '--job-id', '1087', '--raw', '--subdir', 'DAGS_FOLDER/Python-Delta-Lake/Dags/SparkOracle2FileStoreDag.py', '--cfg-path', '/tmp/tmpn61u5kwu']
+[2023-07-12T00:04:23.777+0000] {standard_task_runner.py:85} INFO - Job 1087: Subtask process_top_list
+[2023-07-12T00:04:23.803+0000] {task_command.py:410} INFO - Running <TaskInstance: Oracle_to_Filestore_Concurrent.process_top_list manual__2023-07-12T00:04:22.216709+00:00 [running]> on host 876817aabcc6
+[2023-07-12T00:04:23.845+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='phomsophaN@saccounty.net' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Oracle_to_Filestore_Concurrent' AIRFLOW_CTX_TASK_ID='process_top_list' AIRFLOW_CTX_EXECUTION_DATE='2023-07-12T00:04:22.216709+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-12T00:04:22.216709+00:00'
+[2023-07-12T00:04:23.846+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-12T00:04:23.846+0000] {logging_mixin.py:149} INFO - SparkSession Not found, creating one
+[2023-07-12T00:04:23.846+0000] {logging_mixin.py:149} INFO - setting up configured spark connection Cluster
+[2023-07-12T00:04:23.846+0000] {logging_mixin.py:149} INFO - Initializing support for delta lake spark context
+[2023-07-12T00:04:26.124+0000] {logging_mixin.py:149} INFO - Returning Spark Context
+[2023-07-12T00:04:26.125+0000] {logging_mixin.py:149} INFO - Spark Connection check - session found
+[2023-07-12T00:04:26.606+0000] {logging_mixin.py:149} INFO - Attempt to read Msql Table by query: select * from DeltaLake.OracleTablesLog
+        where OracleRows < 10000000 AND OracleRows > 0 AND CountyFilter IS NOT NULL and PrimaryKeyColumn !=''
+[2023-07-12T00:04:53.942+0000] {local_task_job_runner.py:291} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-07-12T00:04:53.943+0000] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 652. PIDs of all processes in the group: [654, 652]
+[2023-07-12T00:04:53.943+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 652
+[2023-07-12T00:04:53.944+0000] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-07-12T00:04:53.944+0000] {clientserver.py:538} INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1519, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-07-12T00:04:53.944+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-12T00:04:53.944+0000] {java_gateway.py:1055} ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1519, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2023-07-12T00:04:53.945+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-07-12T00:04:53.946+0000] {SparkOracle2FileStore.py:202} INFO - Error Running Pipeline:An error occurred while calling o74.collectToPython
+[2023-07-12T00:04:53.946+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-12T00:04:53.953+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=Oracle_to_Filestore_Concurrent, task_id=process_top_list, execution_date=20230712T000422, start_date=20230712T000423, end_date=20230712T000453
+[2023-07-12T00:04:54.357+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=654, status='terminated', started='00:04:23') (654) terminated with exit code None
+[2023-07-12T00:04:54.357+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=652, status='terminated', exitcode=0, started='00:04:23') (652) terminated with exit code 0
